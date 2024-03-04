@@ -1,0 +1,159 @@
+{
+    "testimonials": [
+        {
+            "name": "alice",
+            "comment": "nice work"
+        },
+        {
+            "name": "john",
+            "comment": "nice work"
+        }
+    ],
+
+    "art": [
+        {
+            "id": 1,
+            "name": "Client A",
+            "image": "astroworld"
+        },
+        {
+            "id": 2,
+            "name": "Client B",
+            "image": "yeat"
+        },
+        {
+            "id": 3,
+            "name": "Client C",
+            "image": "savage"
+        },
+        {
+            "id": 4,
+            "name": "Client D",
+            "image": "trav"
+        },
+        {
+            "id": 5,
+            "name": "Client E",
+            "image": "drake"
+        },
+        {
+            "id": 6,
+            "name": "Client F",
+            "image": "eminem"
+        }
+    ],
+    "factions": [
+        {
+            "id": 1,
+            "stat": "The Mechanics",
+            "short": "Read More",
+            "long": "Formerly laborers in Vice City’s thriving automotive industry, the Mechanics were left with nothing when production got packed up and sent overseas. The Boss stepped in and gave them a new outlet for their mechanical knowhow. Now, they maintain The Mob’s fleet of cars, guns, and whatever else might need a bit of tinkering. They’re inventors too, or at least that’s what people say ever since one of the Mechanics strapped a second engine to a car’s undercarriage. It took a few explosive experiments for them to make that work, but now the Turbo modification comes standard on every Mob vehicle. The Mechanics promise it’s safe. Not that safety matters when the Mechanics keep the whole operation well-oiled and making money. "
+        },
+        {
+            "id": 2,
+            "stat": " The Hillbillies",
+            "short": "Read More",
+            "long": " Vice City’s collapse sent shockwaves far and wide. In the neighboring counties, one-time farmers and ranchers found their simple way of life destroyed when there was nobody left to buy their goods. The Boss needed somewhere to set up his distilleries. It couldn’t be in the city, the cops would sniff it out and shut it down, so he turned to the boonies. Out here, surrounded by acres upon acres of dense farmland and reeking bogs that only a native can navigate, the Hillbillies brew, package, and ship their moonshine back to the city. Whether from inhaling the distillery fumes or an overfondness for their own supply, Hillbillies aren’t all there upstairs. That’s a good thing. A sane person would’ve never thought to add a few sticks of butter, two apples, and a big spoonful of blueberry pie filling to every batch of booze. That kind of genius needs a Hillbilly’s mind.  "
+        },
+        {
+            "id": 3,
+            "stat": " The Runners",
+            "short": "Read More",
+            "long": "The cops know a few things. They know, beyond a shadow of a doubt, that deliveries are made every night: They set up roadblocks, they flood the streets, they’ve got plainclothes always looking out. And it’s never enough, because the Mob knows shit, too. They know where the roadblocks are, what streets the cops forgot to cover, and they can smell an undercover cop from two blocks upwind. How? Because the guy who delivered the Chief of Police the morning paper is one of the Mob’s Runners. The leather-jacketed teen always with his friends at the burger shop across the street from the police station? He’s a Runner. All those friends are Runners. They’re mission control, the Mob’s informants, and they’re invisible.  "
+        },
+        {
+            "id": 4,
+            "stat": " The Soldier",
+            "short": "Read More",
+            "long": "In any endeavor, big or small, somebody’s got to keep the peace. That goes double when the endeavor in question is a highly intricate delivery scheme for illicit goods. The Boss needed Soldiers, and he found them. Chosen for their huge size, loyalty, and love of violent solutions, Soldiers follow the Boss’ orders with zealous enthusiasm. So before any Runner pockets more than his cut or some Hillbilly drinks too much of the supply, they’d better think long and hard about what they’ll do when a Soldier comes knocking. "
+        },
+        {
+            "id": 5,
+            "stat": "The Underbosses",
+            "short": "Read More",
+            "long": "  People have a tendency to value their own opinion more than someone else's. It’s human nature. When there’s a job to do and a dozen different Mobsters have a dozen different opinions on how to do it, things could get messy. Getting messy means getting caught. Getting caught means losing money. Nobody likes losing money, but the Boss fucking hates it. That’s why he’s got Underbosses. Out of those dozen opinions, the Underboss’ is the only one that matters. They’re picked because they’re excellent: They’re the meanest Soldiers, the craftiest Runners, the craziest Hillbillies, the smartest Mechanics. When an Underboss says jump, everyone else tries to reach the ceiling. No retorts, no questions, no disobedience. Just a squeaky clean hierarchy.  "
+        },
+        {
+            "id": 6,
+            "stat": "The  Suit",
+            "short": "Read More",
+            "long": " The Boss has a big damned target on his back. Every cop, politician, and government employee dreams about taking him down. He’s got to keep himself safe and in the shadows, but he’s also got a business to run. He can’t let himself get pinned down. That’s where the Suits come in. They’re the Boss’ handpicked lieutenants, his honor guard. Runner got nabbed, tossed in jail? The Suits will get him out. The cops are planning to raid a machine shop? The Suits knew a week ago, they already moved the Mechanics somewhere else. The Suits are the Underboss’ Underboss, the Mob’s true elite, and they’re dressed the part. The real beauty of the system, though, is that the Boss could be any one of them.  "
+        }
+    ],
+
+    "navLinks": [
+        {
+            "id": 1,
+            "name": "Lore",
+            "linkTo": "lore"
+        },
+        {
+            "id": 2,
+            "name": "Factions",
+            "linkTo": "factions"
+        },
+        {
+            "id": 3,
+            "name": "Roadmap",
+            "linkTo": "roadmap"
+        },
+        {
+            "id": 4,
+            "name": "Art",
+            "linkTo": "art"
+        },
+        {
+            "id": 5,
+            "name": "Team",
+            "linkTo": "team"
+        }
+    ],
+
+    "team": [
+        {
+            "name": "Nymos ",
+            "role": "Founder",
+            "twitter": "https://twitter.com/Nymos_eth",
+
+            "image": "nymos"
+        },
+        {
+            "name": "FoolsGold ",
+            "role": "Co-Founder",
+
+            "image": "nymos"
+        },
+        {
+            "name": "Mark  ",
+            "role": "Co-Tokenomics Advisor",
+            "twitter": "https://twitter.com/mhl_eth",
+            "website": "https://mhl-solutions.com",
+            "image": "mark"
+        },
+        {
+            "name": "WebThree Consulting & Auditing ",
+            "role": "Devs",
+            "website": "https://www.webthreeconsulting.com",
+            "twitter": "https://twitter.com/Web3Auditing",
+            "image": "web3audit"
+        },
+        {
+            "name": "Conduct3",
+            "role": "Marketing",
+            "twitter": "https://twitter.com/Conduct03",
+            "website": "https://mhl-solutions.com",
+            "image": "c3"
+        }
+    ],
+
+    "clients": [
+        {
+            "name": "google",
+            "comment": "nice work"
+        },
+        {
+            "name": "youtube",
+            "comment": "nice work"
+        }
+    ]
+}

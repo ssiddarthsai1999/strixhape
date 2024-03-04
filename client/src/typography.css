@@ -1,0 +1,228 @@
+:root {
+    /* Font weights */
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    /* Color for headers and texts */
+    --header-color: #000; /* Black for headers */
+    --text-color: #dceaea; /* Slightly gray for regular text */
+
+    /* Dark/Light mode colors */
+    --text-color-light: #1d1d1d; /* Dark text for light background */
+    --text-color-dark: #e0eeee; /* Light text for dark background */
+    --background-color-light: #e7dec2; /* Light background */
+    --background-color-dark: #121315; /* Dark background */
+
+    /* Header colors for dark/light mode */
+    --header-color-light: #bf5331; /* Black for headers in light mode */
+    --header-color-dark: #ccc; /* Light gray for headers in dark mode */
+}
+
+body {
+    font-family: "HelveticaWorldBold";
+    overflow-x: hidden;
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+    -webkit-overflow-scrolling: touch;
+
+    scroll-behavior: smooth;
+}
+
+/* Headings (h1 - h6) */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--header-color); /* Color for headers */
+    font-weight: var(--font-weight-bold); /* Bold font for headers */
+}
+
+h1 {
+    font-size: 6em;
+    font-family: "Rubik Mono One", monospace;
+}
+h2 {
+    font-size: 4em;
+    font-family: "Rubik Mono One", monospace;
+}
+h3 {
+    font-size: 5em;
+}
+h4 {
+    font-size: 1.5em;
+    color: #1d1d1d;
+}
+h5 {
+    font-size: 1.25em;
+}
+h6 {
+    font-size: 1em;
+}
+
+/* Paragraph */
+p {
+    color: var(--text-color); /* Slightly gray color for paragraph */
+
+    line-height: 1.5;
+    font-weight: var(--font-weight-regular); /* Regular font for paragraph */
+}
+
+/* Span */
+span {
+    color: var(--text-color);
+    color: #1d1d1d;
+
+    font-size: 4em;
+}
+
+/* List elements (ul, ol, li) */
+ul,
+ol {
+    padding-left: 20px;
+}
+
+li {
+    color: var(--text-color);
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    color: var(--text-color);
+}
+
+@media (max-width: 1400px) {
+    /* For tablets */
+    h1 {
+        font-size: 4.5em;
+    } /* Smaller than original */
+    h2 {
+        font-size: 3em;
+    }
+    h3 {
+        font-size: 2.75em;
+    }
+    h4 {
+        font-size: 2em;
+    }
+    h5 {
+        font-size: 1.75em;
+    }
+    h6 {
+        font-size: 1.3em;
+    }
+    p,
+    span,
+    li {
+        font-size: 1.3em; /* Slightly smaller */
+    }
+    .buttonVariation1 {
+        padding: 12px 26px;
+        border-radius: 40px;
+ 
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* For tablets */
+    h1 {
+        font-size: 3em;
+    } /* Smaller than original */
+    h2 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1.75em;
+    }
+    h4 {
+        font-size: 1.5em;
+    }
+    h5 {
+        font-size: 1.25em;
+    }
+    h6 {
+        font-size: 1em;
+    }
+    p,
+    span,
+    li {
+        font-size: 1.3em; /* Slightly smaller */
+    }
+    .buttonVariation1 {
+        padding: 8px 20px;
+        border-radius: 40px;
+    
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 768px) {
+    /* For tablets */
+    h1 {
+        font-size: 2em;
+    } /* Smaller than original */
+    h2 {
+        font-size: 1.75em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    h4 {
+        font-size: 1.25em;
+    }
+    h5 {
+        font-size: 1em;
+    }
+    h6 {
+        font-size: 0.85em;
+    }
+    p,
+    span,
+    li {
+        font-size: 0.9em; /* Slightly smaller */
+    }
+    .buttonVariation1 {
+        padding: 6px 15px;
+        border-radius: 40px;
+        color: white;
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    /* For mobile phones */
+    h1 {
+        font-size: 1.5em;
+    } /* Smaller than tablet */
+    h2 {
+        font-size: 1.25em;
+    }
+    h3 {
+        font-size: 1.1em;
+    }
+    h4 {
+        font-size: 1em;
+    }
+    h5 {
+        font-size: 0.9em;
+    }
+    h6 {
+        font-size: 0.75em;
+    }
+    p,
+    span,
+    li {
+        font-size: 0.85em; /* Smaller than tablet */
+    }
+}

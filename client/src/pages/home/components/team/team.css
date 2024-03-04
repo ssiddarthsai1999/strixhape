@@ -1,0 +1,23 @@
+.team-card .image-container {
+    position: relative;
+    width: 100%; /* Initial width */
+    overflow: hidden;
+    display: flex;
+}
+
+.team-card .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    visibility: hidden; /* Hide info by default */
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease;
+}
+
+.team-card .image-container:hover .info {
+    visibility: visible;
+    opacity: 1;
+}

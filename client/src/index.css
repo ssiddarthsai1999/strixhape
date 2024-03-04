@@ -1,0 +1,217 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "HelveticaWorldBold";
+    src: url("./assets/fonts/HelveticaWorldBold.ttf") format("truetype");
+}
+
+/* Define basic font settings and color variables */
+#tr__fluid__anim {
+    background-color: transparent !important;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #121315;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #bf5331;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #5a2616;
+}
+
+.buttonVariation1 {
+    border: 1px solid #1d1d1d;
+    padding: 16px 30px;
+    border-radius: 40px;
+    color: #1d1d1d;
+    font-size: 1.2em;
+    background-color: transparent;
+    transition: 0.3s ease;
+}
+.buttonVariation1:hover {
+    background-color: #bf5331;
+    color: black;
+}
+
+.buttonVariation2 {
+    border: 1px solid #bf5331;
+    padding: 16px 30px;
+    border-radius: 4px;
+    color: #bf5331;
+    font-size: 1.2em;
+    background-color: transparent;
+    transition: 0.3s ease;
+}
+.buttonVariation2:hover {
+    background-color: #bf5331;
+    color: rgb(255, 255, 255);
+}
+
+/* Light/Dark Mode Styles */
+body .light-mode {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+    --header-color: var(
+        --header-color-light
+    ); /* Color for headers in light mode */
+    --text-color: var(
+        --text-color
+    ); /* Slightly gray color for text in light mode */
+}
+
+body .dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+    --header-color: var(
+        --header-color-dark
+    ); /* Color for headers in dark mode */
+    --text-color: var(
+        --text-color-dark
+    ); /* Light color for text in dark mode */
+}
+
+/* Add more styles or media queries as per your need */
+
+/* Responsive Typography */
+
+.panel {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.red {
+    height: 100vh;
+    min-height: 100vh;
+    background-color: red;
+}
+.dark {
+    height: 100vh;
+    min-height: 100vh;
+    background-color: rgb(18, 18, 18);
+}
+.orange {
+    height: 100vh;
+    min-height: 100vh;
+    background-color: rgb(232, 97, 13);
+}
+.purple {
+    height: 50vh;
+    min-height: 50vh;
+    background-color: purple;
+}
+
+.boxes-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.linearBg {
+    position: relative;
+    z-index: 1;
+
+    background-attachment: fixed; /* Key for parallax effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Cover ensures the background covers the div */
+    background-image: linear-gradient(
+        to right top,
+        #220530,
+        #1a0930,
+        #130b2e,
+        #0c0d2b,
+        #060e28,
+        #020f25,
+        #001022,
+        #00101e,
+        #00101a,
+        #000f16,
+        #000e11,
+        #010c0c
+    );
+}
+.teamCardBg {
+    background: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 32px 0 #c5fcfc;
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+
+    animation: circularMotion 5s infinite linear;
+}
+
+/* Base state: applying transition properties here ensures smooth changes */
+.navbarBase {
+    transition: background 0.3s ease, box-shadow 0.3s ease,
+        backdrop-filter 0.3s ease, border-bottom 0.3s ease;
+    background: transparent; /* Default state */
+    box-shadow: none; /* Default state */
+    backdrop-filter: none; /* Default state */
+    border-bottom: transparent; /* Default state */
+    /* Apply other base styles here */
+}
+
+/* Scrolled state */
+.navbarBg {
+    background: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0px 12px 0 #bf5331;
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    /* Remove or adjust the animation property if it interferes with the transition */
+    /* animation: navbarMotion 5s infinite linear; */
+}
+.scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+
+@keyframes navbarMotion {
+    0% {
+        border-bottom: 3px solid rgba(31, 38, 135, 0.37);
+        box-shadow: 10px 0 302px 0 rgba(31, 38, 135, 0.37);
+    }
+    25% {
+        border-bottom: 3px solid rgba(31, 38, 135, 0.37);
+        box-shadow: 0 10px 32px 0 rgba(31, 38, 135, 0.37);
+    }
+    50% {
+        border-bottom: 3px solid rgba(31, 114, 135, 0.37);
+        box-shadow: -10px 0 302px 0 rgba(31, 114, 135, 0.37);
+    }
+    75% {
+        border-bottom: 3px solid rgba(111, 31, 135, 0.37);
+        box-shadow: -10px 0 302px 0 rgba(111, 31, 135, 0.37);
+    }
+    100% {
+        border-bottom: 3px solid rgba(31, 38, 135, 0.37);
+        box-shadow: -10px 0 302px 0 rgba(31, 38, 135, 0.37);
+    }
+}
