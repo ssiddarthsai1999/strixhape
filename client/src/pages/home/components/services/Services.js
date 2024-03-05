@@ -94,40 +94,43 @@ function Services({ data }) {
         };
     }, []);
 
- useLayoutEffect(() => {
-     gsap.registerPlugin(ScrollTrigger);
+    useLayoutEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
 
-     const splitservices = new SplitText("#splitservices", {
-         type: "chars",
-     });
-     gsap.from(splitservices.chars, {
-         opacity: 0,
-         skew: 30,
-         rotationX: -70,
-         x: -500,
-         y:-100,
-         rotationY: 20,
-         scale:-10,
-         ease: "power1.inOut",
-         stagger: {
-             each: 0.13,
-             from: "start",
-         },
-         scrollTrigger: {
-             trigger: "#splitservices",
-             start: "top bottom", // Trigger animation when top of the element reaches the center of the viewport
-             end: "bottom center", // End animation when bottom of the element reaches the center of the viewport
-             scrub: 3, // Smooth scrubbing effect on scroll
-             toggleActions: "play none none none", // Toggle actions when element enters and leaves the viewport
-         },
-     });
-     return () => {
-         splitservices.revert();
-     };
- }, []);
+        const splitservices = new SplitText("#splitservices", {
+            type: "chars",
+        });
+        gsap.from(splitservices.chars, {
+            opacity: 0,
+            skew: 30,
+            rotationX: -70,
+            x: -500,
+            y: -100,
+            rotationY: 20,
+            scale: -10,
+            ease: "power1.inOut",
+            stagger: {
+                each: 0.13,
+                from: "start",
+            },
+            scrollTrigger: {
+                trigger: "#splitservices",
+                start: "top bottom", // Trigger animation when top of the element reaches the center of the viewport
+                end: "bottom center", // End animation when bottom of the element reaches the center of the viewport
+                scrub: 3, // Smooth scrubbing effect on scroll
+                toggleActions: "play none none none", // Toggle actions when element enters and leaves the viewport
+            },
+        });
+        return () => {
+            splitservices.revert();
+        };
+    }, []);
 
     return (
-        <div className="relative mx-auto p-2 min-h-screen md:px-24  flex justify-center flex-col py-[100px] ">
+        <div
+            className="relative mx-auto p-2 min-h-screen md:px-24  flex justify-center flex-col py-[100px] "
+            id="services"
+        >
             <div className="p-4 py-10 mx-auto w-full xl:w-1/2 flex flex-col z-10">
                 <h1 className="text-center " id="splitservices">
                     SERVICES
@@ -146,16 +149,16 @@ function Services({ data }) {
                         <h4 className="text-[10px] md:text-[16px] lg:text-[20px]">
                             Website development
                         </h4>
-                        <i class="fa-solid fa-globe fa-lg"></i>
+                        <i className="mt-2 fa-solid fa-globe "></i>
                     </div>
                 </div>
 
                 <div class="w-[120px] h-[120px] md:h-[200px] md:w-[200px]  lg:h-[300px] lg:w-[300px] rounded-tr-full relative border border-[#E80D0D] flex items-center justify-center">
                     <div class="text-center md:mt-10 md:mr-10 mt-3 mr-3">
                         <h4 className="text-[10px] md:text-[16px] lg:text-[20px]">
-                            Website development
+                            Bot development
                         </h4>
-                        <i class="fa-solid fa-globe fa-lg"></i>
+                        <i className=" mt-2 fa-brands fa-discord"></i>
                     </div>
                 </div>
             </div>
@@ -163,18 +166,18 @@ function Services({ data }) {
                 <div class="w-[120px] h-[120px] md:h-[200px] md:w-[200px]  lg:h-[300px] lg:w-[300px] rounded-bl-full relative  border border-[#E80D0D]  flex items-center justify-center">
                     <div class="text-center md:mb-10 md:ml-10 mb-3 ml-3">
                         <h4 className="text-[10px] md:text-[16px] lg:text-[20px]">
-                            Website development
+                            Discord server management
                         </h4>
-                        <i class="fa-solid fa-globe fa-lg"></i>
+                        <i className=" mt-2 fa-solid fa-server"></i>
                     </div>
                 </div>
 
                 <div class="w-[120px] h-[120px] md:h-[200px] md:w-[200px]  lg:h-[300px] lg:w-[300px]   rounded-br-full relative border border-[#E80D0D]  flex items-center justify-center">
                     <div class="text-center md:mb-10 md:mr-10 mb-3 mr-3">
                         <h4 className="text-[10px] md:text-[16px] lg:text-[20px]">
-                            Website development
+                            Ui/Ux design
                         </h4>
-                        <i class="fa-solid fa-globe fa-lg"></i>
+                        <i className="mt-2 fa-brands fa-figma"></i>
                     </div>
                 </div>
             </div>

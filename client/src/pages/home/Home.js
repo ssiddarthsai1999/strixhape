@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 
 import Opening from "./components/opening/Opening";
 import gsap from "gsap";
-
+import { useLocation } from "react-router-dom";
 import MobileNavbar from "../shared/navbar/MobileNavbar";
 
 import Hero from "./components/hero/Hero";
@@ -11,17 +11,21 @@ import Services from "./components/services/Services";
 import Team from "./components/team/Team";
 import Project from "./components/art/Project";
 import Client from "./components/client/Client";
+import Footer from "../shared/footer/Footer";
 
 function Home({ data, pageName, setPageName, setNavbarVisible }) {
     const [isLoading, setIsLoading] = useState(true);
-
+    const [scrollToComponent, setScrollToComponent] = useState("");
     const handleLetsGo = () => {
         setPageName("opening");
     };
     const handleNormal = () => {
         setPageName("normal");
     };
-
+    const handleScrollToComponent = (id) => {
+        setScrollToComponent(id);
+    };
+    console.log("scroll", scrollToComponent);
     useEffect(() => {
         // Animation for entering the "mobileNavbar" page
         if (pageName === "mobileNavbar") {
@@ -46,7 +50,23 @@ function Home({ data, pageName, setPageName, setNavbarVisible }) {
         }
     }, [pageName]);
 
-    // Animation for entering the "normal" page
+    useEffect(() => {
+        const scrollToElement = () => {
+            const element = document.getElementById(scrollToComponent);
+            console.log("clicked", element);
+            if (element) {
+                gsap.to(window, {
+                    scrollTo: {
+                        y: element.offsetTop,
+                        offsetY: 100, // adjust this value as needed
+                    },
+                    ease: "power2.inOut",
+                });
+            }
+        };
+
+        scrollToElement();
+    }, [scrollToComponent]);
 
     return (
         <div className="   max-w-full  w-full mx-auto  relative">
@@ -57,6 +77,9 @@ function Home({ data, pageName, setPageName, setNavbarVisible }) {
                         data={data}
                         setPageName={setPageName}
                         setNavbarVisible={setNavbarVisible}
+                        handleScrollToComponent={handleScrollToComponent}
+                        setScrollToComponent={setScrollToComponent}
+                        scrollToComponent={scrollToComponent}
                     />
                 </div>
             )}
@@ -89,9 +112,9 @@ function Home({ data, pageName, setPageName, setNavbarVisible }) {
                     <div className="">
                         <Client data={data} />
                     </div>{" "}
-                    {/* <div className="  mx-auto  mt-[300px]">
-                        <Roadmap data={data} />
-                    </div>{" "} */}
+                    <div className="">
+                        <Footer data={data} />
+                    </div>{" "}
                 </div>
             )}
         </div>

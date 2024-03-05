@@ -115,12 +115,11 @@ function App() {
                                 <Outlet />
 
                                 <div className="flex-grow"></div>
-                                {/* <div
-                                    className="pt-[80px] md:pt-[150px] bottom-0"
-                                    id="footer"
-                                >
-                                    <Footer />
-                                </div> */}
+                                {/* {pageName === "normal" && (
+                                    <div className=" bottom-0" id="footer">
+                                        <Footer />
+                                    </div>
+                                )} */}
                             </div>
                         }
                     >

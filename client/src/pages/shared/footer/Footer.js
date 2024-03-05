@@ -11,17 +11,20 @@ export default function Footer() {
     };
 
     return (
-        <footer className="  border-t border-[#4815df]">
-            <div className="max-w-6xl mx-auto px-4 py-10 md:py-20">
+        <footer className="  ">
+            <div
+                className="max-w-6xl mx-auto px-4 py-10 md:py-20"
+                id="contactpage"
+            >
                 <div className="xl:grid xl:grid-cols-4 md:grid md:grid-cols-2">
                     {/* Company Information */}
-                    <div className="mb-6 md:mb-0">
+                    {/* <div className="mb-6 md:mb-0">
                         <h5 className="uppercase font-bold mb-2.5">Company</h5>
                         <p className="mb-4">123 Business Ave.</p>
                         <p className="mb-4">Business City, 12345</p>
                         <p className="mb-4">Email: contact@business.com</p>
                         <p>Phone: (123) 456-7890</p>
-                    </div>
+                    </div> */}
 
                     {/* Quick Links */}
                     <div className="mb-6 md:mb-0">
@@ -31,7 +34,12 @@ export default function Footer() {
                         <ul className="space-y-2">
                             <li>
                                 <a href="#" className="hover:underline">
-                                    About Us
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" className="hover:underline">
+                                    About
                                 </a>
                             </li>
                             <li>
@@ -41,12 +49,17 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a href="#" className="hover:underline">
-                                    FAQ
+                                    Projects
                                 </a>
                             </li>
                             <li>
                                 <a href="#" className="hover:underline">
-                                    Privacy Policy
+                                    Team
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" className="hover:underline">
+                                    Clients
                                 </a>
                             </li>
                         </ul>
@@ -55,54 +68,28 @@ export default function Footer() {
                     {/* Social Media */}
                     <div className="mb-6 md:mb-0">
                         <h5 className="uppercase font-bold my-2.5">
-                            Follow Us
+                            Feel free to contact us on
                         </h5>
                         <div className="flex space-x-4">
-                            <a href="#" aria-label="Facebook">
-                                <i className="fa-brands fa-facebook fa-lg text-[#4815df]"></i>
-                            </a>
                             <a href="#" aria-label="Twitter">
-                                <i className="fa-brands fa-twitter text-[#4815df] fa-lg"></i>
-                            </a>
-                            <a href="#" aria-label="Instagram">
-                                <i className="text-[#4815df]  fa-brands fa-instagram fa-lg"></i>
+                                <i className="fa-brands fa-twitter  fa-2xl"></i>
                             </a>
                             <a
-                                href="#"
-                                aria-label="LinkedIn"
-                                className="hover:text-gray-400"
+                                href="https://twitter.com/dt_smat"
+                                aria-label="Discord"
                             >
-                                {/* SVG or Image for LinkedIn */}
+                                <i className="fa-brands fa-discord fa-2xl"></i>
                             </a>
                         </div>
                     </div>
 
                     {/* Newsletter */}
-                    <div className="mb-6 md:mb-0">
-                        <h5 className="uppercase font-bold mb-2.5">
-                            Newsletter
-                        </h5>
-                        <p className="mb-4">
-                            Subscribe to our newsletter for the latest updates.
-                        </p>
-                        <form>
-                            <input
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                                type="email"
-                                placeholder="Email"
-                                className=" placeholder:text-[12px] py-4 rounded-[24px] pl-5 p-2 text-[8px] md:text-[12px] w-full md:w-[400px] bg-transparent border border-solid border-[#4815df]"
-                            />
-                            <button className="button1 mt-3 ">Subscribe</button>
-                        </form>
-                    </div>
                 </div>
             </div>
 
             {/* Copyright */}
-            <div className="text-center p-4 border-t border-[#4815df] mt-10">
-                © {new Date().getFullYear()} ITravelEverywhere. All Rights
-                Reserved.
+            <div className="text-center p-4 mt-10">
+                © {new Date().getFullYear()} DotStrix. All Rights Reserved.
             </div>
         </footer>
     );

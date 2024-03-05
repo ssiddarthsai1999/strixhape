@@ -66,7 +66,10 @@ function Client({ data }) {
          }, []);
 
     return (
-        <div className="relative mx-auto p-2 min-h-screen md:px-24 flex justify-center flex-col py-[100px]">
+        <div
+            className="relative mx-auto p-2 min-h-screen md:px-24 flex justify-center flex-col py-[100px]"
+id="clientspage"
+        >
             <div className="py-10 mx-auto w-full lg:w-1/2 flex flex-col z-10 p-4">
                 <h2 className="text-center" id="splitclient">
                     WHAT OUR CLIENTS SAY ABOUT US

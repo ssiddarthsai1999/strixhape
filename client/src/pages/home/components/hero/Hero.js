@@ -78,7 +78,19 @@ function Hero() {
             splithero.revert();
         };
     }, []);
-
+  const scrollToElement = (id) => {
+      const element = document.getElementById(id);
+      console.log("clicked", id);
+      if (element) {
+          gsap.to(window, {
+              scrollTo: {
+                  y: element.offsetTop,
+                  offsetY: 100, // adjust this value as needed
+              },
+              ease: "power2.inOut",
+          });
+      }
+  };
     return (
         <div
             id="scene"
@@ -100,7 +112,7 @@ function Hero() {
                         Today!"
                     </h4>{" "}
                     <button
-                        onClick={() => console.log("hi")}
+                        onClick={() => scrollToElement("contactpage")}
                         className="buttonVariation2 cursor-pointer justify-center lg:mx-0 mx-auto lg:justify-start flex"
                     >
                         contact

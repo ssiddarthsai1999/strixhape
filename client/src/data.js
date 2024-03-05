@@ -5,16 +5,14 @@ import savageImage from "./assets/images/art/21.jpg";
 import travImage from "./assets/images/art/trav.jfif";
 import drakeImage from "./assets/images/art/drake.jpg";
 import eminemImage from "./assets/images/art/eminem.jpg";
-import nymosImage from "./assets/images/team/nymos.jpg";
-import markImage from "./assets/images/team/mark.jpg";
-import web3auditImage from "./assets/images/team/web3audit.jpg";
-import c3Image from "./assets/images/team/c3.jpg";
-
+import smatImage from "./assets/images/team/smat.jpg";
+import flexImage from "./assets/images/team/flex.jpg";
+import jujuImage from "./assets/images/team/juju.jpg";
+import frostImage from "./assets/images/team/frost.jpg";
+import nymosImage from "./assets/images/client/nymos.jpg";
+import xcaliburImage from "./assets/images/client/xcalibur.jpg";
 const data = {
-    testimonials: [
-        { name: "alice", comment: "nice work" },
-        { name: "john", comment: "nice work" },
-    ],
+
     art: [
         { id: 1, name: "Client A", image: astroworldImage },
         { id: 2, name: "Client B", image: yeatImage },
@@ -25,40 +23,40 @@ const data = {
     ],
 
     navLinks: [
-        { id: 1, name: "Lore", linkTo: "lore" },
-        { id: 2, name: "Factions", linkTo: "factions" },
-        { id: 3, name: "Roadmap", linkTo: "roadmap" },
-        { id: 4, name: "Art", linkTo: "art" },
+        { id: 1, name: "Home", linkTo: "scene" },
+        { id: 2, name: "About", linkTo: "about" },
+        { id: 3, name: "Services", linkTo: "services" },
+        { id: 4, name: "Projects", linkTo: "projects" },
         { id: 5, name: "Team", linkTo: "team" },
+        { id: 6, name: "Clients", linkTo: "clientspage" },
+        { id: 7, name: "Contact", linkTo: "contactpage" },
     ],
     team: [
         {
-            name: "Nymos ",
-            role: "Founder",
-            twitter: "https://twitter.com/Nymos_eth",
-            image: nymosImage,
-        },
-        { name: "FoolsGold ", role: "Co-Founder", image: nymosImage }, // Assuming same image as Nymos
-        {
-            name: "Mark  ",
-            role: "Co-Tokenomics Advisor",
-            twitter: "https://twitter.com/mhl_eth",
-            website: "https://mhl-solutions.com",
-            image: markImage,
+            name: "Smat ",
+            role: "Marketing/Developer",
+            twitter: "https://twitter.com/dt_smat",
+            image: smatImage,
         },
         {
-            name: "WebThree Consulting & Auditing ",
-            role: "Devs",
-            website: "https://www.webthreeconsulting.com",
-            twitter: "https://twitter.com/Web3Auditing",
-            image: web3auditImage,
+            name: "Flex ",
+            role: "Developer",
+            twitter: "https://twitter.com/SSiddarthsai",
+            image: flexImage,
+        }, // Assuming same image as Nymos
+        {
+            name: "Juju  ",
+            role: "Asset Developer",
+            twitter: "https://twitter.com/btwiamjuju",
+
+            image: jujuImage,
         },
         {
-            name: "Conduct3",
-            role: "Marketing",
-            twitter: "https://twitter.com/Conduct03",
-            website: "https://mhl-solutions.com",
-            image: c3Image,
+            name: "Frost",
+            role: "UI/UX Designer",
+
+            twitter: "https://twitter.com/FrOsTces3",
+            image: frostImage,
         },
     ],
     clients: [
@@ -66,13 +64,13 @@ const data = {
             name: "XCalibur",
             comment:
                 "Working with DotStrix was an absolute pleasure. They transformed our vision into reality with their expertise in web development. Our blog website now stands out with its sleek design and seamless functionality. Highly recommend!",
-            image: travImage,
+            image: xcaliburImage,
         },
         {
             name: "Nymos",
             comment:
                 "Partnering with DotStrix for our animated website with Web3 integration was a game-changer. Their creativity and technical prowess brought our vision to life in ways we couldn't have imagined. Truly impressed!",
-            image: yeatImage,
+            image: nymosImage,
         },
     ],
 };

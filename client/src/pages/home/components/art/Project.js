@@ -71,7 +71,7 @@ function Project({ data }) {
     return (
         <div
             className="lg:min-h-screen w-full pt-[100px] lg:pt-[2px] p-4 lg:p-6 flex-col flex justify-center items-end  relative "
-            id="art"
+            id="projects"
         >
             <div className="py-10 w-full lg:w-1/2 flex flex-col z-10 p-4">
                 <h1
