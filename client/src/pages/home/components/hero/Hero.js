@@ -1,7 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useLayoutEffect } from "react";
 import hero from "../../../../assets/images/homewallpapers/hero.jpg";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
-
+import { SplitText } from "gsap/SplitText";
 function Hero() {
     const sceneRef = useRef(null);
     const imgRef = useRef(null);
@@ -27,6 +28,57 @@ function Hero() {
         };
     }, []);
 
+    useEffect(() => {
+        gsap.registerPlugin(SplitText);
+        const innovationpara = new SplitText("#innovationpara", {
+            type: "words",
+        });
+
+        gsap.from(innovationpara.words, {
+            duration: 3,
+            opacity: 0,
+
+            ease: "power1.inOut",
+            stagger: {
+                each: 0.13,
+                from: "start",
+            },
+        });
+
+        return () => {
+            innovationpara.revert();
+        };
+    }, []);
+
+    useLayoutEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        const splithero = new SplitText("#splithero", {
+            type: "words",
+        });
+        gsap.from(splithero.words, {
+            opacity: 0,
+            color: "#e80d0d",
+            x: 1000,
+            y: 1000,
+            ease: "power1.out",
+            stagger: {
+                each: 0.23,
+                from: "start",
+            },
+            scrollTrigger: {
+                trigger: "#splithero",
+                start: "top bottom", // Trigger animation when top of the element reaches the center of the viewport
+                end: "bottom center", // End animation when bottom of the element reaches the center of the viewport
+                scrub: 3, // Smooth scrubbing effect on scroll
+                toggleActions: "play none none none", // Toggle actions when element enters and leaves the viewport
+            },
+        });
+        return () => {
+            splithero.revert();
+        };
+    }, []);
+
     return (
         <div
             id="scene"
@@ -37,7 +89,10 @@ function Hero() {
                     <h1 className="mb-10 lg:mb-2 text-center lg:text-left">
                         LEAD THE INNOVATION!
                     </h1>
-                    <h4 className="mb-10 w-full 2xl:w-1/2 text-left text-white">
+                    <h4
+                        className="mb-10 w-full 2xl:w-1/2 text-left text-white"
+                        id="innovationpara"
+                    >
                         Elevate Your Online Presence with Expert Web Development
                         Solutions. Welcome to DotStrix, Where Innovation Meets
                         Design Excellence. Crafting Engaging Digital Experiences

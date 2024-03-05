@@ -17,7 +17,7 @@ function Opening({ handleNormal }) {
         // Animation start delay
         const timer = setTimeout(() => {
             handleNormal();
-        }, 5000); // Delay before starting the animation
+        }, 0); // Delay before starting the animation
 
         return () => clearTimeout(timer);
     }, []);

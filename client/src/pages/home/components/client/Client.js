@@ -1,11 +1,17 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useLayoutEffect } from "react";
 import { Carousel } from "react-responsive-carousel";
-import gsap from "gsap";
+import gsap from "gsap";import { ScrollTrigger } from "gsap/ScrollTrigger";
 import clients from "../../../../assets/images/homewallpapers/clients.jpg";
 import { SplitText } from "gsap/SplitText";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import ClientCard from "./clientCard/ClientCard";
-
+import {
+    Fade,
+    AttentionSeeker,
+    JackInTheBox,
+    Zoom,
+    Roll,
+} from "react-awesome-reveal";
 function Client({ data }) {
     const bgRef = useRef(null);
 
@@ -30,15 +36,49 @@ function Client({ data }) {
          };
      }, []);
 
+         useLayoutEffect(() => {
+             gsap.registerPlugin(ScrollTrigger);
+
+             const splitclient = new SplitText("#splitclient", {
+                 type: "words",
+             });
+             gsap.from(splitclient.words, {
+                 opacity: 0,
+                 color: "#e80d0d",
+
+                 scale: 10,
+                 ease: "power1.out",
+                 stagger: {
+                     each: 0.23,
+                     from: "end",
+                 },
+                 scrollTrigger: {
+                     trigger: "#splitclient",
+                     start: "top bottom", // Trigger animation when top of the element reaches the center of the viewport
+                     end: "bottom center", // End animation when bottom of the element reaches the center of the viewport
+                     scrub: 3, // Smooth scrubbing effect on scroll
+                     toggleActions: "play none none none", // Toggle actions when element enters and leaves the viewport
+                 },
+             });
+             return () => {
+                 splitclient.revert();
+             };
+         }, []);
+
     return (
         <div className="relative mx-auto p-2 min-h-screen md:px-24 flex justify-center flex-col py-[100px]">
             <div className="py-10 mx-auto w-full lg:w-1/2 flex flex-col z-10 p-4">
-                <h2 className="text-center">WHAT OUR CLIENTS SAY ABOUT US</h2>
-                <h4 className="w-full text-left mx-auto justify-center flex mt-10">
-                    "Our clients rave about our innovative solutions and
-                    exceptional service, citing us as their go-to agency for all
-                    things digital. Experience the difference with us today!"
-                </h4>
+                <h2 className="text-center" id="splitclient">
+                    WHAT OUR CLIENTS SAY ABOUT US
+                </h2>
+                <Roll>
+                    <h4 className="w-full text-left mx-auto justify-center flex mt-10">
+                        "Our clients rave about our innovative solutions and
+                        exceptional service, citing us as their go-to agency for
+                        all things digital. Experience the difference with us
+                        today!"
+                    </h4>
+                </Roll>
             </div>
             <Carousel
                 showStatus={false}

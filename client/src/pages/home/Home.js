@@ -48,7 +48,6 @@ function Home({ data, pageName, setPageName, setNavbarVisible }) {
 
     // Animation for entering the "normal" page
 
-    console.log("isLoading", isLoading);
     return (
         <div className="   max-w-full  w-full mx-auto  relative">
             {pageName === "mobileNavbar" && (

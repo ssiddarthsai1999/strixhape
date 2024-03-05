@@ -1,9 +1,15 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useLayoutEffect } from "react";
 import gsap from "gsap";
 import services from "../../../../assets/images/homewallpapers/services.jpg";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
-
+import {
+    Fade,
+    AttentionSeeker,
+    JackInTheBox,
+    Zoom,
+    Roll,
+} from "react-awesome-reveal";
 function Services({ data }) {
     const bgRef = useRef(null);
 
@@ -88,15 +94,51 @@ function Services({ data }) {
         };
     }, []);
 
+ useLayoutEffect(() => {
+     gsap.registerPlugin(ScrollTrigger);
+
+     const splitservices = new SplitText("#splitservices", {
+         type: "chars",
+     });
+     gsap.from(splitservices.chars, {
+         opacity: 0,
+         skew: 30,
+         rotationX: -70,
+         x: -500,
+         y:-100,
+         rotationY: 20,
+         scale:-10,
+         ease: "power1.inOut",
+         stagger: {
+             each: 0.13,
+             from: "start",
+         },
+         scrollTrigger: {
+             trigger: "#splitservices",
+             start: "top bottom", // Trigger animation when top of the element reaches the center of the viewport
+             end: "bottom center", // End animation when bottom of the element reaches the center of the viewport
+             scrub: 3, // Smooth scrubbing effect on scroll
+             toggleActions: "play none none none", // Toggle actions when element enters and leaves the viewport
+         },
+     });
+     return () => {
+         splitservices.revert();
+     };
+ }, []);
+
     return (
         <div className="relative mx-auto p-2 min-h-screen md:px-24  flex justify-center flex-col py-[100px] ">
             <div className="p-4 py-10 mx-auto w-full xl:w-1/2 flex flex-col z-10">
-                <h1 className="text-center ">SERVICES</h1>
-                <h4 className=" w-full lg:w-1/2 text-left mt-5   lg:text-left mx-auto justify-center flex">
-                    "Unlock your digital potential with our tailored Discord bot
-                    solutions and seamless web development services. Discover
-                    how we can elevate your online presence today!"
-                </h4>
+                <h1 className="text-center " id="splitservices">
+                    SERVICES
+                </h1>
+                <Zoom>
+                    <h4 className=" w-full lg:w-1/2 text-left mt-5   lg:text-left mx-auto justify-center flex">
+                        "Unlock your digital potential with our tailored Discord
+                        bot solutions and seamless web development services.
+                        Discover how we can elevate your online presence today!"
+                    </h4>
+                </Zoom>
             </div>
             <div class="mx-auto  flex justify-center mt-[100px]  z-10">
                 <div class=" w-[120px] h-[120px] md:h-[200px] md:w-[200px]  lg:h-[300px] lg:w-[300px]  rounded-tl-full relative  border border-[#E80D0D]  flex items-center justify-center">
