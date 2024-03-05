@@ -100,12 +100,12 @@ function Services({ data }) {
     return (
         <div className="relative mx-auto p-2 min-h-screen md:px-24  flex justify-center flex-col py-[100px] ">
             <div className="py-10 mx-auto w-full md:w-1/2 flex flex-col z-10">
-                <h2 className="text-center">Services</h2>
-                <p className="w-1/3 text-left  mx-auto justify-center flex">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s
-                </p>
+                <h1 className="text-center">Services</h1>
+                <h4 className="w-1/2 text-center  mx-auto justify-center flex">
+                    "Unlock your digital potential with our tailored Discord bot
+                    solutions and seamless web development services. Discover
+                    how we can elevate your online presence today!"
+                </h4>
             </div>
             <div class="mx-auto  flex justify-center mt-[100px]  z-10">
                 <div class="w-[300px] h-[300px] rounded-tl-full relative  border border-[#E80D0D]  flex items-center justify-center">

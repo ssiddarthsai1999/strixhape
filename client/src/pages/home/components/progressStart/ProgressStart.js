@@ -33,7 +33,7 @@ function ProgressStart({ setPageName }) {
         };
     }, [setPageName]);
     return (
-        <div className="min-h-screen bg-[#171616]  md:max-w-[100%] mx-auto max-w-full align-middle flex items-center justify-center ">
+        <div className="min-h-screen bg-[#E80D0D]  md:max-w-[100%] mx-auto max-w-full align-middle flex items-center justify-center ">
             <div />
             <div
                 className="content text-center max-w-[400px] min-w-[200px] w-[250px] mx-auto"

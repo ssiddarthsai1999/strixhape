@@ -4,14 +4,13 @@ import Opening from "./components/opening/Opening";
 import gsap from "gsap";
 
 import MobileNavbar from "../shared/navbar/MobileNavbar";
-import Art from "./components/art/Art";
-import Roadmap from "./components/roadmap/Roadmap";
-import TeamTwo from "./components/team/TeamTwo";
-import AboutTwo from "./components/about/AboutTwo";
+
 import Hero from "./components/hero/Hero";
 import About from "./components/about/About";
 import Services from "./components/services/Services";
 import Team from "./components/team/Team";
+import Project from "./components/art/Project";
+import Client from "./components/client/Client";
 
 function Home({ data, pageName, setPageName, setNavbarVisible }) {
     const [isLoading, setIsLoading] = useState(true);
@@ -84,18 +83,21 @@ function Home({ data, pageName, setPageName, setNavbarVisible }) {
                     <div className=" ">
                         <About data={data} />
                     </div>{" "}
-                    <div className=" md:mt-[100px]">
+                    <div className=" ">
                         <Services data={data} />
+                    </div>{" "}
+                    <div className="pt-[100px]">
+                        <Project data={data} />
                     </div>{" "}
                     <div className="">
                         <Team data={data} />
                     </div>{" "}
-                    <div className="  mx-auto  mt-[300px]">
+                    <div className="">
+                        <Client data={data} />
+                    </div>{" "}
+                    {/* <div className="  mx-auto  mt-[300px]">
                         <Roadmap data={data} />
-                    </div>{" "}
-                    <div className="mt-[50px] md:mt-[150px]">
-                        <Art data={data} />
-                    </div>{" "}
+                    </div>{" "} */}
                 </div>
             )}
         </div>

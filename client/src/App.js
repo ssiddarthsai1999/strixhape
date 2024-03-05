@@ -99,7 +99,7 @@ function App() {
                                 {pageName === "normal" && (
                                     <div className="w-full  absolute md:fixed top-0 z-40 pt-5 ">
                                         <LoadingBar
-                                            color="#C5FCFC"
+                                            color="#E80D0D"
                                             progress={topLoadingProgress}
                                         ></LoadingBar>
                                         <Navbar

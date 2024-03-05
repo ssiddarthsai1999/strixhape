@@ -136,11 +136,16 @@ function About({ data }) {
                     <h1 className=" ">ABOUT US</h1>
                 </div>
                 <div className="  w-full md:w-1/2 flex flex-col  justify-end align-bottom mt-[40px]">
-                    <h3 className=" text-left ">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s
-                    </h3>
+                    <h4 className=" text-left ">
+                        At DotStrix, we're passionate about harnessing the
+                        power of technology to propel businesses forward. As a
+                        dynamic team of developers and creatives, we specialize
+                        in crafting innovative solutions tailored to meet your
+                        digital needs. From crafting bespoke Discord bots to
+                        streamlining server management, we pride ourselves on
+                        delivering cutting-edge solutions that elevate your
+                        Discord experience. 
+                    </h4>
                 </div>
             </div>
         </div>

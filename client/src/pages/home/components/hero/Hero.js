@@ -88,15 +88,17 @@ function Hero() {
                         LEAD THE INNOVATION!
                     </h1>
                     <h4 className="mb-10 w-1/2  text-left text-white">
-                        We roar with success, delivering the nymos through
-                        versatile design, branding, and the latest tech
-                        development.
+                        Elevate Your Online Presence with Expert Web Development
+                        Solutions. Welcome to DotStrix, Where Innovation
+                        Meets Design Excellence. Crafting Engaging Digital
+                        Experiences Since [Year]. Let's Transform Your Vision
+                        into Reality Today!"
                     </h4>{" "}
                     <button
                         onClick={() => console.log("hi")}
-                        className="buttonVariation1 cursor-pointer justify-start flex"
+                        className="buttonVariation2 cursor-pointer justify-start flex"
                     >
-                        Button
+                        Contact
                     </button>
                 </div>
             </div>

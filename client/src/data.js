@@ -62,8 +62,18 @@ const data = {
         },
     ],
     clients: [
-        { name: "google", comment: "nice work" },
-        { name: "youtube", comment: "nice work" },
+        {
+            name: "XCalibur",
+            comment:
+                "Working with DotStrix was an absolute pleasure. They transformed our vision into reality with their expertise in web development. Our blog website now stands out with its sleek design and seamless functionality. Highly recommend!",
+            image: travImage,
+        },
+        {
+            name: "Nymos",
+            comment:
+                "Partnering with DotStrix for our animated website with Web3 integration was a game-changer. Their creativity and technical prowess brought our vision to life in ways we couldn't have imagined. Truly impressed!",
+            image: yeatImage,
+        },
     ],
 };
 
