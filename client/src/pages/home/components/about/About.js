@@ -130,12 +130,12 @@ function About({ data }) {
     }, []);
 
     return (
-        <div className="  relative mx-auto p-2 h-screen flex items-center justify-center md:px-24  ">
-            <div className="flex">
-                <div className="  w-full md:w-1/2 flex flex-col ">
-                    <h1 className=" ">ABOUT US</h1>
+        <div className="  relative mx-auto p-2 lg:min-h-screen xl:h-screen flex items-center justify-center md:px-24  ">
+            <div className="flex flex-col xl:flex-row p-4">
+                <div className="  w-full  md:w-1/2 flex flex-col ">
+                    <h1 className="text-center md:text-left ">ABOUT US</h1>
                 </div>
-                <div className="  w-full md:w-1/2 flex flex-col  justify-end align-bottom mt-[40px]">
+                <div className="  w-full lg:w-1/2 flex flex-col  justify-end align-bottom mt-[40px]">
                     <h4 className=" text-left ">
                         At DotStrix, we're passionate about harnessing the
                         power of technology to propel businesses forward. As a

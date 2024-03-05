@@ -8,7 +8,7 @@ import gsap from "gsap";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import aot from "../../../assets/songs/aot.mp3";
-
+import logo from "../../../assets/images/strixlogo.png"
 function Navbar({ data, pageName, setPageName }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 768);
@@ -92,30 +92,36 @@ function Navbar({ data, pageName, setPageName }) {
             className={`items-center flex justify-between align-middle w-[90%] max-w-[1800px] mx-auto rounded-[40px] p-4`}
         >
             <div>
-                <p>DotStrix</p>
+                <img src={logo} className="w-14" alt="" />
             </div>
             <div
                 className="flex gap-10 align-middle items-center"
                 ref={audioRef}
             >
                 {/* Render the music player if isMusicPlayed is true */}
-                {isMusicPlayed ? (
-                    <Tooltip title="Stop music">
-                        <i
-                            className="fa-solid fa-volume-xmark  cursor-pointer text-white fa-lg"
-                            onClick={playMusic}
-                        ></i>
+                {!isMusicPlayed ? (
+                    <Tooltip title="Play music">
+                        <div onClick={playMusic} className="cursor-pointer">
+                            <i
+                                className="fa-solid fa-volume-xmark  cursor-pointer text-white fa-lg hover:scale-125  hover:text-[#e80d0d] duration-200 ease-in hover:-rotate-12"
+                                onClick={playMusic}
+                            ></i>
+                        </div>
                     </Tooltip>
                 ) : (
-                    <Tooltip title="Play music">
-                        <i
-                            className="fa-solid fa-volume-off cursor-pointer text-white fa-lg"
-                            onClick={playMusic}
-                        ></i>
+                    <Tooltip title="Stop music">
+                        <div onClick={playMusic} className="cursor-pointer">
+                            <i className="fa-solid fa-volume-off  text-white fa-lg hover:scale-125  hover:text-[#e80d0d] duration-200 ease-in  hover:-rotate-6"></i>
+                        </div>
                     </Tooltip>
                 )}
                 <Tooltip title="Open menu">
-                    <i className="fa-solid fa-bars-staggered fa-lg cursor-pointer "></i>
+                    <div
+                        onClick={() => setPageName("mobileNavbar")}
+                        className="cursor-pointer"
+                    >
+                        <i className="fa-solid fa-bars-staggered fa-lg cursor-pointer  hover:scale-125  hover:text-[#e80d0d] duration-200 ease-in hover:rotate-12"></i>
+                    </div>
                 </Tooltip>
             </div>
         </div>

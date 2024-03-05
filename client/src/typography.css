@@ -32,13 +32,13 @@ body .dark-mode {
 
     /* Dark/Light mode colors */
     --text-color-light: #1d1d1d; /* Dark text for light background */
-    --text-color-dark: #e0eeee; /* Light text for dark background */
+    --text-color-dark: #dfd7d7; /* Light text for dark background */
     --background-color-light: #050505; /* Light background */
     --background-color-dark: #000000; /* Dark background */
 
     /* Header colors for dark/light mode */
     --header-color-light: #bf5331; /* Black for headers in light mode */
-    --header-color-dark: #ccc; /* Light gray for headers in dark mode */
+    --header-color-dark: #ffecec; /* Light gray for headers in dark mode */
 }
 
 body {
@@ -139,24 +139,23 @@ td {
     transition: 0.3s ease;
 }
 .buttonVariation1:hover {
-    background-color: #E80D0D;
+    background-color: #e80d0d;
     color: black;
 }
 
 .buttonVariation2 {
-    border: 1px solid #E80D0D;
+    border: 1px solid #e80d0d;
     padding: 16px 30px;
 
-    color: #E80D0D;
+    color: #e80d0d;
     font-size: 1.2em;
     background-color: transparent;
     transition: 0.3s ease;
 }
 .buttonVariation2:hover {
-    background-color: #E80D0D;
+    background-color: #e80d0d;
     color: rgb(255, 255, 255);
 }
-
 
 @media (max-width: 1400px) {
     /* For tablets */
@@ -170,7 +169,7 @@ td {
         font-size: 2.75em;
     }
     h4 {
-        font-size: 2em;
+        font-size: 1.6em;
     }
     h5 {
         font-size: 1.75em;
@@ -214,7 +213,7 @@ td {
     p,
     span,
     li {
-        font-size: 1.3em; /* Slightly smaller */
+        font-size: 1.1em; /* Slightly smaller */
     }
     .buttonVariation1 {
         padding: 8px 20px;
@@ -282,4 +281,13 @@ td {
     li {
         font-size: 0.85em; /* Smaller than tablet */
     }
+    .buttonVariation2 {
+    border: 1px solid #e80d0d;
+    padding: 8px 15px;
+
+    color: #e80d0d;
+    font-size: 0.8em;
+    background-color: transparent;
+    transition: 0.3s ease;
+}
 }

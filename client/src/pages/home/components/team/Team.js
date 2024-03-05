@@ -7,7 +7,7 @@ function Team({ data }) {
 
     return (
         <div
-            className="  min-h-screen h-screen   w-full  justify-center flex-col flex align-middle items-center  mx-auto "
+            className="  lg:min-h-screen lg:h-screen   w-full  justify-center flex-col flex align-middle items-center  mx-auto "
             id="team"
         >
             <div className="z-10">

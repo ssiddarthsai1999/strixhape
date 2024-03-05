@@ -1,43 +1,34 @@
-import React, { useEffect, useRef, useState } from "react";
-import { Slide } from "react-awesome-reveal";
-
+import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import services from "../../../../assets/images/homewallpapers/services.jpg";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 
 function Services({ data }) {
-    const [open, setOpen] = useState(false);
+    const bgRef = useRef(null);
 
-    const handleOpen = () => {
-        setOpen(true);
-        requestAnimationFrame(() => {
-            gsap.fromTo(
-                "#splitModal",
-                { opacity: 0, scale: 0.5, rotation: -45 },
-                {
-                    opacity: 1, // Animate to fully visible
-                    scale: 1, // Include any other animations you desire
-                    duration: 1.2,
-                    rotation: 0,
-                    ease: "bounce.out",
-                }
-            );
-        });
-    };
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
 
-    const handleClose = () => {
-        // Start the closing animation with GSAP.
-        gsap.to("#splitModal", {
-            opacity: 0,
-            scale: 0.5,
-            rotation: 45,
-            duration: 0.5,
-            ease: "back.in",
-            onComplete: () => {
-                setOpen(false);
-            },
-        });
-    };
+        const handleScroll = () => {
+            if (bgRef.current) {
+                const scrollY = window.scrollY;
+                const translateY = scrollY * 0.1; // Adjust the speed of the parallax effect
+
+                gsap.to(bgRef.current, {
+                    y: translateY,
+                    duration: 0.5, // Duration of the animation
+                    ease: "power2.out", // Easing function
+                });
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     useEffect(() => {
         const splitH1 = new SplitText("#splith1", { type: "chars" });
@@ -99,40 +90,48 @@ function Services({ data }) {
 
     return (
         <div className="relative mx-auto p-2 min-h-screen md:px-24  flex justify-center flex-col py-[100px] ">
-            <div className="py-10 mx-auto w-full md:w-1/2 flex flex-col z-10">
-                <h1 className="text-center">Services</h1>
-                <h4 className="w-1/2 text-center  mx-auto justify-center flex">
+            <div className="p-4 py-10 mx-auto w-full xl:w-1/2 flex flex-col z-10">
+                <h1 className="text-center ">SERVICES</h1>
+                <h4 className=" w-full lg:w-1/2 text-left mt-5   lg:text-left mx-auto justify-center flex">
                     "Unlock your digital potential with our tailored Discord bot
                     solutions and seamless web development services. Discover
                     how we can elevate your online presence today!"
                 </h4>
             </div>
             <div class="mx-auto  flex justify-center mt-[100px]  z-10">
-                <div class="w-[300px] h-[300px] rounded-tl-full relative  border border-[#E80D0D]  flex items-center justify-center">
-                    <div class="text-center mt-10 ml-10">
-                        <h4>Website development</h4>
+                <div class=" w-[120px] h-[120px] md:h-[200px] md:w-[200px]  lg:h-[300px] lg:w-[300px]  rounded-tl-full relative  border border-[#E80D0D]  flex items-center justify-center">
+                    <div className="text-center md:mt-10 md:ml-10 mt-3 ml-3">
+                        <h4 className="text-[10px] md:text-[16px] lg:text-[20px]">
+                            Website development
+                        </h4>
                         <i class="fa-solid fa-globe fa-lg"></i>
                     </div>
                 </div>
 
-                <div class="w-[300px] h-[300px]  rounded-tr-full relative border border-[#E80D0D] flex items-center justify-center">
-                    <div class="text-center mt-10 mr-10">
-                        <h4>Website development</h4>
+                <div class="w-[120px] h-[120px] md:h-[200px] md:w-[200px]  lg:h-[300px] lg:w-[300px] rounded-tr-full relative border border-[#E80D0D] flex items-center justify-center">
+                    <div class="text-center md:mt-10 md:mr-10 mt-3 mr-3">
+                        <h4 className="text-[10px] md:text-[16px] lg:text-[20px]">
+                            Website development
+                        </h4>
                         <i class="fa-solid fa-globe fa-lg"></i>
                     </div>
                 </div>
             </div>
             <div class="mx-auto  flex justify-center  z-10">
-                <div class="w-[300px] h-[300px] rounded-bl-full relative  border border-[#E80D0D]  flex items-center justify-center">
-                    <div class="text-center ml-10">
-                        <h4>Website development</h4>
+                <div class="w-[120px] h-[120px] md:h-[200px] md:w-[200px]  lg:h-[300px] lg:w-[300px] rounded-bl-full relative  border border-[#E80D0D]  flex items-center justify-center">
+                    <div class="text-center md:mb-10 md:ml-10 mb-3 ml-3">
+                        <h4 className="text-[10px] md:text-[16px] lg:text-[20px]">
+                            Website development
+                        </h4>
                         <i class="fa-solid fa-globe fa-lg"></i>
                     </div>
                 </div>
 
-                <div class="w-[300px] h-[300px]  rounded-br-full relative border border-[#E80D0D]  flex items-center justify-center">
-                    <div class="text-center  mr-10">
-                        <h4>Website development</h4>
+                <div class="w-[120px] h-[120px] md:h-[200px] md:w-[200px]  lg:h-[300px] lg:w-[300px]   rounded-br-full relative border border-[#E80D0D]  flex items-center justify-center">
+                    <div class="text-center md:mb-10 md:mr-10 mb-3 mr-3">
+                        <h4 className="text-[10px] md:text-[16px] lg:text-[20px]">
+                            Website development
+                        </h4>
                         <i class="fa-solid fa-globe fa-lg"></i>
                     </div>
                 </div>
@@ -144,11 +143,12 @@ function Services({ data }) {
                 <img
                     src={services}
                     alt=""
-                    className=" object-cover w-full h-full"
+                    ref={bgRef}
+                    className="object-cover w-full h-full"
                 />
             </div>{" "}
-            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
-            <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent"></div>
+            {/* <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent"></div> */}
         </div>
     );
 }

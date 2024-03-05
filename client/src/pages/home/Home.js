@@ -23,21 +23,6 @@ function Home({ data, pageName, setPageName, setNavbarVisible }) {
     };
 
     useEffect(() => {
-        // Animation for entering the "normal" page
-        if (pageName === "normal") {
-            gsap.from("#normal-page", {
-                x: "100%",
-                opacity: 0,
-                visibility: "visible", // Make content visible right as animation starts
-                yoyo: true,
-                duration: 2,
-                ease: "power3.out",
-                onStart: () => {
-                    setIsLoading(false); // You might adjust when to set loading to false
-                },
-                onComplete: () => {},
-            });
-        }
         // Animation for entering the "mobileNavbar" page
         if (pageName === "mobileNavbar") {
             gsap.from("#mobileNavbar", {
@@ -47,14 +32,29 @@ function Home({ data, pageName, setPageName, setNavbarVisible }) {
                 duration: 1.5,
                 ease: "power3.out",
             });
+        } else if (pageName === "normal") {
+            setIsLoading(true); // Set loading state to true when transitioning to the "normal" page
+            gsap.from("#normal-page", {
+                y: "-100%",
+                opacity: 0,
+                rotate: 180,
+                visibility: "visible", // Make content visible right as animation starts
+                yoyo: true,
+                duration: 2,
+                ease: "power2.out",
+            });
         }
     }, [pageName]);
+
+    // Animation for entering the "normal" page
+
     console.log("isLoading", isLoading);
     return (
         <div className="   max-w-full  w-full mx-auto  relative">
             {pageName === "mobileNavbar" && (
                 <div className="" id="mobileNavbar">
                     <MobileNavbar
+                        pageName={pageName}
                         data={data}
                         setPageName={setPageName}
                         setNavbarVisible={setNavbarVisible}
@@ -71,12 +71,7 @@ function Home({ data, pageName, setPageName, setNavbarVisible }) {
             )}
 
             {pageName === "normal" && (
-                <div
-                    className={`relative overflow-hidden ${
-                        isLoading ? "hidden" : "visible"
-                    }`}
-                    id="normal-page"
-                >
+                <div className={`relative overflow-hidden `} id="normal-page">
                     <div className="">
                         <Hero />
                     </div>{" "}
@@ -86,7 +81,7 @@ function Home({ data, pageName, setPageName, setNavbarVisible }) {
                     <div className=" ">
                         <Services data={data} />
                     </div>{" "}
-                    <div className="pt-[100px]">
+                    <div className=" lg:pt-[100px]">
                         <Project data={data} />
                     </div>{" "}
                     <div className="">

@@ -2,10 +2,10 @@ import React from "react";
 
 function ProjectCard({ item }) {
     return (
-        <div className="border border-[#E80D0D] p">
+        <div className="border border-[#E80D0D] p  cardBg">
             <img
                 src={item.image}
-                className=" w-[300px]  md:w-[500px] object-cover h-[400px] md:h-[500px] "
+                className=" md:w-[300px] w-[150px] lg:w-[450px] object-cover  md:h-[400] h-[200px] lg:h-[500px] "
                 alt="artpic"
             />
             <p className="p-4">{item.name}</p>

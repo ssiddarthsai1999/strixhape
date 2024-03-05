@@ -1,16 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-function MobileNavbar({ setPageName, data }) {
+import gsap from "gsap";
+function MobileNavbar({ setPageName, data, pageName }) {
+    const handleNavToHome = () => {
+        gsap.to("#mobileNavbar", {
+            y: "-100%",
+            opacity: 0,
+            yoyo: true,
+            duration: 1.5,
+            ease: "power1.out",
+            onComplete: () => {
+                setPageName("normal");
+            },
+        });
+    };
+
     const closeMenu = () => {
         setPageName("normal");
     };
     const navLinks = data.navLinks;
     return (
-        <div className="min-h-screen flex items-center justify-center bg-black">
+        <div
+            id="mobileNavbar"
+            className="min-h-screen flex items-center justify-center bg-red-900"
+        >
             <div className="absolute top-20 right-20">
                 <i
-                    onClick={() => setPageName("normal")}
-                    className="fa-xl fa-solid fa-xmark"
+                    onClick={handleNavToHome}
+                    className="fa-xl fa-solid fa-xmark cursor-pointer"
                 ></i>
             </div>
             <div className="flex flex-col items-center justify-center">

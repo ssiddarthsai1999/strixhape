@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import gsap from "gsap";
-import logo from "../../../../assets/images/logopfp.gif";
+import logo from "../../../../assets/images/strixlogo.png";
 
 function Opening({ handleNormal }) {
     const [show, setShow] = useState(true); // To control the visibility
@@ -13,61 +13,64 @@ function Opening({ handleNormal }) {
 
         return () => clearTimeout(timer);
     }, []);
+    useEffect(() => {
+        // Animation start delay
+        const timer = setTimeout(() => {
+            handleNormal();
+        }, 5000); // Delay before starting the animation
 
-    const animatePageTransition = () => {
-        // Animate each diamond-shaped bar to move from top to bottom and vanish
-        gsap.to(".diamond", {
-            y: "100vh", // Move slightly more than 100vh to ensure it's below the screen
-            ease: "power2.inOut",
-            duration: 0.3, // Make the fall faster
-            stagger: 0.05, // Reduce the time between each bar's animation start
-            onComplete: () => {
-                handleNormal();
-                setShow(false); // Hide diamonds after animation
-            },
+        return () => clearTimeout(timer);
+    }, []);
+
+    useEffect(() => {
+        // Animation start delay
+        const timer = setTimeout(() => {
+            animateDivTransition();
+        }, 3000); // Delay before starting the animation
+
+        return () => clearTimeout(timer);
+    }, []);
+    const animateDivTransition = () => {
+        gsap.to("#divs", {
+            color: "#e80d0d",
+            opacity: 0,
+            scale: -2,
+            duration: 2, // Duration of the animation
+            repeat: -1, // Infinite repeat
+            ease: "ease", // Corrected easing function
         });
     };
-
+    const animatePageTransition = () => {
+        gsap.to("#logo", {
+            rotation: 720, // Rotate 360 degrees
+            duration: 1, // Duration of the animation
+            repeat: -1, // Infinite repeat
+            ease: "power3.out", // Corrected easing function
+        });
+        gsap.to("#text", {
+            color: "#e80d0d",
+            opacity: 20,
+            scale: 2,
+            duration: 1, // Duration of the animation
+            repeat: -1, // Infinite repeat
+            ease: "ease", // Corrected easing function
+        });
+    };
     // Adjusted the `top` value and `height` to reduce gaps and ensure faster covering of the viewport
-    const diamonds = Array.from({ length: 20 }, (_, index) => (
-        <div
-            key={index}
-            className={`diamond ${show ? "show" : ""}`}
-            style={{
-                position: "absolute",
-                top: `-${index * 5}vh`, // Reduced gap between bars
-                left: 0,
-                width: "100vw", // Full viewport width
-                height: "10vh", // Adjusted height for less gap
-                backgroundColor: "transparent",
-                overflow: "hidden",
-            }}
-        >
-            <div
-                style={{
-                    position: "absolute",
-                    top: "0",
-                    left: "0",
-                    width: "100%", // Full width of the parent
-                    height: "100%", // Full height of the parent
-                    backgroundColor: "#121315", // Color of the diamond bar
-                    clipPath: "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)", // Diamond shape
-                }}
-            ></div>
-        </div>
-    ));
 
     return (
-        <div className="layer min-h-screen md:max-w-[100%] mx-auto max-w-full align-middle flex items-center justify-center content bg-black">
-            {show && diamonds} {/* Only render diamonds if `show` is true */}
+        <div className="overflow-hidden  max-h-screen min-h-screen md:max-w-[100%] mx-auto max-w-full align-middle flex items-center justify-center content bg-black">
+            {show}
             <div
-                className="text-center"
+                id="divs"
+                className="text-center  "
                 style={{ position: "relative", zIndex: 2 }}
             >
-                <h1 className="text-white" id="splith1">
-                    The Mob
+                <h1 className="mb-10" id="text">
+                    DOTSTRIX
                 </h1>
                 <img
+                    id="logo"
                     src={logo}
                     className="w-[200px] flex justify-center mx-auto"
                     alt=""

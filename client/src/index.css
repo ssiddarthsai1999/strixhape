@@ -27,7 +27,7 @@ html {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #E80D0D;
+    background: #e80d0d;
     border-radius: 10px;
 }
 
@@ -36,10 +36,15 @@ html {
     background: #890606;
 }
 
+.cardBg {
+    background: rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 5px 7px 35px 0px rgba(232, 13, 13, 0.37);
+    -moz-box-shadow: 5px 7px 35px 0px rgba(232, 13, 13, 0.37);
+    box-shadow: 5px 7px 35px 0px rgba(232, 13, 13, 0.37);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
 
-
-
-
+}
 
 /* Add more styles or media queries as per your need */
 
