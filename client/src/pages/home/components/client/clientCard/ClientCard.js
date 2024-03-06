@@ -2,7 +2,7 @@ import React from "react";
 import { Fade, Slide, Bounce } from "react-awesome-reveal";
 function ClientCard({ item }) {
     return (
-        <div className="w-full border  border-[#E80D0D] p-2 lg:p-10 cardBg ">
+        <div  className="w-full border  border-[#E80D0D] p-2 lg:p-10 cardBg ">
             <img
                 src={item.image}
                 alt=""

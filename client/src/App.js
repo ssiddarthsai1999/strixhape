@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import { scroll } from "framer-motion/dom";
 import { motion } from "framer-motion";
-
+import FluidSimulation from "fluid-simulation-react";
 import "./typography.css";
 import NotFound from "./pages/shared/notfound/NotFound";
 import LoadingBar from "react-top-loading-bar";
@@ -88,6 +88,7 @@ function App() {
 
     return (
         <div className={`${mode === "dark" ? "dark-mode" : "light-mode"} `}>
+
             <ToastContainer />
             <Router>
                 {" "}

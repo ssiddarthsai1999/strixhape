@@ -2,7 +2,7 @@ import React from "react";
 import { Fade, Slide, Bounce } from "react-awesome-reveal";
 function TeamCard({ item }) {
     return (
-        <div className="z-20 cardBg min-w-[200px] md:min-w-[350px]  border-[#E80D0D] sm:min-w-[250px] lg:min-w-[400px] xl:min-w-[600px] sm:w-[600px] lg:w-[1200px] h-[300px] md:h-[400px] border   flex-col flex ">
+        <div key={item.id} className="z-20 cardBg min-w-[200px] md:min-w-[350px]  border-[#E80D0D] sm:min-w-[250px] lg:min-w-[400px] xl:min-w-[600px] sm:w-[600px] lg:w-[1200px] h-[300px] md:h-[400px] border   flex-col flex ">
             <img
                 src={item.image}
                 alt=""

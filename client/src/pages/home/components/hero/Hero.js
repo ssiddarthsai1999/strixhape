@@ -1,8 +1,17 @@
-import React, { useEffect, useRef, useLayoutEffect } from "react";
+import React, {
+    useEffect,
+    useRef,
+    useLayoutEffect,
+    useState,
+    useMemo,
+} from "react";
+import FluidSimulation from "fluid-simulation-react";
 import hero from "../../../../assets/images/homewallpapers/hero.jpg";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim";
 function Hero() {
     const sceneRef = useRef(null);
     const imgRef = useRef(null);
@@ -50,47 +59,20 @@ function Hero() {
         };
     }, []);
 
-    useLayoutEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
+    const scrollToElement = (id) => {
+        const element = document.getElementById(id);
 
-        const splithero = new SplitText("#splithero", {
-            type: "words",
-        });
-        gsap.from(splithero.words, {
-            opacity: 0,
-            color: "#e80d0d",
-            x: 1000,
-            y: 1000,
-            ease: "power1.out",
-            stagger: {
-                each: 0.23,
-                from: "start",
-            },
-            scrollTrigger: {
-                trigger: "#splithero",
-                start: "top bottom", // Trigger animation when top of the element reaches the center of the viewport
-                end: "bottom center", // End animation when bottom of the element reaches the center of the viewport
-                scrub: 3, // Smooth scrubbing effect on scroll
-                toggleActions: "play none none none", // Toggle actions when element enters and leaves the viewport
-            },
-        });
-        return () => {
-            splithero.revert();
-        };
-    }, []);
-  const scrollToElement = (id) => {
-      const element = document.getElementById(id);
-      console.log("clicked", id);
-      if (element) {
-          gsap.to(window, {
-              scrollTo: {
-                  y: element.offsetTop,
-                  offsetY: 100, // adjust this value as needed
-              },
-              ease: "power2.inOut",
-          });
-      }
-  };
+        if (element) {
+            gsap.to(window, {
+                scrollTo: {
+                    y: element.offsetTop,
+                    offsetY: 100, // adjust this value as needed
+                },
+                ease: "power2.inOut",
+            });
+        }
+    };
+
     return (
         <div
             id="scene"
@@ -131,7 +113,7 @@ function Hero() {
                     className="h-screen object-cover w-full"
                 />
             </div>{" "}
-            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>{" "}
         </div>
     );
 }

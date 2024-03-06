@@ -20,7 +20,7 @@ function About({ data }) {
         });
         gsap.from(splitabout.chars, {
             opacity: 0,
-            skew: 30,
+
             rotationX: -180,
             x: 500,
             rotationY: 180,
@@ -39,6 +39,7 @@ function About({ data }) {
         });
         return () => {
             splitabout.revert();
+            ScrollTrigger.refresh();
         };
     }, []);
 

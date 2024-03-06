@@ -12,10 +12,12 @@ import Team from "./components/team/Team";
 import Project from "./components/art/Project";
 import Client from "./components/client/Client";
 import Footer from "../shared/footer/Footer";
-
+import ParticlesComponent from "../shared/navbar/ParticlesComponent";
+import FluidSimulation from "fluid-simulation-react";
 function Home({ data, pageName, setPageName, setNavbarVisible }) {
     const [isLoading, setIsLoading] = useState(true);
-    const [scrollToComponent, setScrollToComponent] = useState("");
+    const [scrollToComponent, setScrollToComponent] = useState("scene");
+
     const handleLetsGo = () => {
         setPageName("opening");
     };
@@ -25,7 +27,7 @@ function Home({ data, pageName, setPageName, setNavbarVisible }) {
     const handleScrollToComponent = (id) => {
         setScrollToComponent(id);
     };
-    console.log("scroll", scrollToComponent);
+
     useEffect(() => {
         // Animation for entering the "mobileNavbar" page
         if (pageName === "mobileNavbar") {
@@ -53,7 +55,7 @@ function Home({ data, pageName, setPageName, setNavbarVisible }) {
     useEffect(() => {
         const scrollToElement = () => {
             const element = document.getElementById(scrollToComponent);
-            console.log("clicked", element);
+            console.log("scroll", scrollToComponent);
             if (element) {
                 gsap.to(window, {
                     scrollTo: {

@@ -78,7 +78,7 @@ export default function Testimonials() {
     );
 
     const goToSection = contextSafe((i) => {
-        console.log("scroll to", i);
+
         scrollTween.current = gsap.to(window, {
             scrollTo: { y: snapTriggers.current[i].start, autoKill: false },
             duration: 1,

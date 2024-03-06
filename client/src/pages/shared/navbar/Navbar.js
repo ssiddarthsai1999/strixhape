@@ -42,7 +42,7 @@ function Navbar({ data, pageName, setPageName }) {
 
     useEffect(() => {
         gsap.set(menuRef.current, { y: "-100%" });
-        console.log(menuRef.current);
+     
     }, []);
 
     const handleMenuOpen = () => {
@@ -57,18 +57,7 @@ function Navbar({ data, pageName, setPageName }) {
         dispatch(toggleTheme());
     };
 
-    const scrollToElement = (id) => {
-        const element = document.getElementById(id);
-        if (element) {
-            gsap.to(window, {
-                scrollTo: {
-                    y: element.offsetTop,
-                    offsetY: 100, // adjust this value as needed
-                },
-                ease: "power2.inOut",
-            });
-        }
-    };
+
 
     const audioRef = useRef(null);
 

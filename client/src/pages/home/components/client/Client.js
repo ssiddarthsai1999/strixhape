@@ -42,24 +42,26 @@ function Client({ data }) {
              const splitclient = new SplitText("#splitclient", {
                  type: "words",
              });
-             gsap.from(splitclient.words, {
-                 opacity: 0,
-                 color: "#e80d0d",
+          
+                     gsap.from(splitclient.words, {
+                         opacity: 0,
+                         color: "#e80d0d",
 
-                 scale: 10,
-                 ease: "power1.out",
-                 stagger: {
-                     each: 0.23,
-                     from: "end",
-                 },
-                 scrollTrigger: {
-                     trigger: "#splitclient",
-                     start: "top bottom", // Trigger animation when top of the element reaches the center of the viewport
-                     end: "bottom center", // End animation when bottom of the element reaches the center of the viewport
-                     scrub: 3, // Smooth scrubbing effect on scroll
-                     toggleActions: "play none none none", // Toggle actions when element enters and leaves the viewport
-                 },
-             });
+                         scale: 10,
+                         ease: "power1.out",
+                         stagger: {
+                             each: 0.23,
+                             from: "end",
+                         },
+                         scrollTrigger: {
+                             trigger: "#splitclient",
+                             start: "top bottom", // Trigger animation when top of the element reaches the center of the viewport
+                             end: "bottom center", // End animation when bottom of the element reaches the center of the viewport
+                             scrub: 3, // Smooth scrubbing effect on scroll
+                             toggleActions: "play none none none", // Toggle actions when element enters and leaves the viewport
+                         },
+                     });
+        
              return () => {
                  splitclient.revert();
              };

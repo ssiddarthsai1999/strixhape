@@ -132,10 +132,10 @@ td {
 .buttonVariation1 {
     border: 1px solid #1d1d1d;
     padding: 16px 30px;
-
+cursor: inherit;
     color: #1d1d1d;
     font-size: 1.2em;
-    background-color: transparent;
+    background-color: transparent;cursor: inherit;
     transition: 0.3s ease;
 }
 .buttonVariation1:hover {
@@ -218,7 +218,7 @@ td {
     .buttonVariation1 {
         padding: 8px 20px;
         border-radius: 40px;
-
+cursor: inherit;
         font-size: 1.6em;
     }
 }
@@ -284,7 +284,7 @@ td {
     .buttonVariation2 {
     border: 1px solid #e80d0d;
     padding: 8px 15px;
-
+cursor: inherit;
     color: #e80d0d;
     font-size: 0.8em;
     background-color: transparent;

@@ -3,7 +3,7 @@ import { Modal, Box } from "@mui/material";
 import "../about.css";
 
 function AboutCard({ item, handleCardOpen, handleCardClose, openCardId }) {
-    console.log("openCardId", openCardId);
+
     return (
         <div
             className={`  `}

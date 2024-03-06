@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from "react";
+import React, { useLayoutEffect, useEffect } from "react";
 import TeamCard from "./teamCard/TeamCard";
 import ScrollContainer from "react-indiana-drag-scroll";
 import gsap from "gsap";
@@ -10,14 +10,14 @@ function Team({ data }) {
 
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
+        gsap.registerPlugin(SplitText);
 
         const splitteam = new SplitText("#splitteam", {
             type: "chars",
         });
+
         gsap.from(splitteam.chars, {
             opacity: 0,
-
-      
             rotation: 360,
             scale: -10,
             ease: "power1.out",
@@ -27,12 +27,20 @@ function Team({ data }) {
             },
             scrollTrigger: {
                 trigger: "#splitteam",
-                start: "top bottom", // Trigger animation when top of the element reaches the center of the viewport
-                end: "bottom center", // End animation when bottom of the element reaches the center of the viewport
-                scrub: 3, // Smooth scrubbing effect on scroll
-                toggleActions: "play none none none", // Toggle actions when element enters and leaves the viewport
+                start: "top bottom",
+                end: "bottom center",
+                scrub: 3,
+                toggleActions: "play none none none",
             },
         });
+
+        // Ensure everything is loaded before refreshing ScrollTrigger
+        // This is a basic example; your actual implementation may vary
+        // depending on how and when your content loads.
+        setTimeout(() => {
+            ScrollTrigger.refresh();
+        }, 2000); // Adjust delay based on expected load time
+
         return () => {
             splitteam.revert();
         };

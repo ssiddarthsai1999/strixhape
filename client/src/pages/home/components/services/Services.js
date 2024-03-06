@@ -1,6 +1,13 @@
-import React, { useEffect, useRef, useLayoutEffect } from "react";
+import React, {
+    useEffect,
+    useRef,
+    useLayoutEffect,
+    useState,
+    useMemo,
+} from "react";
 import gsap from "gsap";
 import services from "../../../../assets/images/homewallpapers/services.jpg";
+
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 import {
@@ -36,64 +43,6 @@ function Services({ data }) {
         };
     }, []);
 
-    useEffect(() => {
-        const splitH1 = new SplitText("#splith1", { type: "chars" });
-        const splitH3 = new SplitText("#splith3", { type: "words" });
-
-        const tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: "#splith1",
-                start: "top bottom", // When the top of the trigger hits the center of the viewport
-                end: "bottom center", // Adjust as needed
-                scrub: 1, // Smooth scrubbing effect on scroll
-                // Toggle actions when scrolling forward and backward
-                toggleActions: "play reverse play reverse",
-            },
-        });
-
-        // Add your animation to the timeline
-        tl.fromTo(
-            splitH1.chars,
-            {
-                duration: 1,
-                x: -100,
-                color: "#C5FCFC",
-                ease: "power2.inOut",
-                stagger: 0.1,
-            },
-            {
-                duration: 1,
-                x: 0,
-                color: "#ccc", // Use a callback function to set color
-                ease: "power2.inOut",
-                stagger: 0.1,
-            }
-        );
-
-        gsap.from(splitH3.words, {
-            scrollTrigger: {
-                trigger: "#splith3",
-                start: "top bottom", // Adjust as needed. "top bottom" means the animation starts when the top of #splith3 hits the bottom of the viewport.
-                toggleActions: "play none none none", // Adjust if you want the animation to reverse on scroll up.
-            },
-            duration: 0.5,
-            opacity: 0,
-            ease: "power2.out",
-            stagger: {
-                each: 0.05,
-                from: "start",
-            },
-        });
-
-        // Cleanup function
-        return () => {
-            tl.kill();
-
-            splitH1.revert();
-            splitH3.revert();
-        };
-    }, []);
-
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
 
@@ -102,7 +51,7 @@ function Services({ data }) {
         });
         gsap.from(splitservices.chars, {
             opacity: 0,
-            skew: 30,
+
             rotationX: -70,
             x: -500,
             y: -100,
