@@ -8,7 +8,7 @@ import gsap from "gsap";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import aot from "../../../assets/songs/aot.mp3";
-import logo from "../../../assets/images/strixlogo.png"
+import logo from "../../../assets/images/strixlogo.png";
 function Navbar({ data, pageName, setPageName }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 768);
@@ -42,7 +42,6 @@ function Navbar({ data, pageName, setPageName }) {
 
     useEffect(() => {
         gsap.set(menuRef.current, { y: "-100%" });
-     
     }, []);
 
     const handleMenuOpen = () => {
@@ -56,8 +55,6 @@ function Navbar({ data, pageName, setPageName }) {
     const toggleDarkOrLight = () => {
         dispatch(toggleTheme());
     };
-
-
 
     const audioRef = useRef(null);
 

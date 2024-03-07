@@ -90,7 +90,7 @@ function Hero() {
                         Elevate Your Online Presence with Expert Web Development
                         Solutions. Welcome to DotStrix, Where Innovation Meets
                         Design Excellence. Crafting Engaging Digital Experiences
-                        Since [Year]. Let's Transform Your Vision into Reality
+                        Since 2022. Let's Transform Your Vision into Reality
                         Today!"
                     </h4>{" "}
                     <button

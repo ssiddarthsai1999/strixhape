@@ -18,7 +18,9 @@ button {
     position: relative;
     z-index: 1; /* Ensure content is below the fluid simulation but above other backgrounds */
 }
-
+#tsparticles {
+    background-color: red;
+}
 /* Define basic font settings and color variables */
 #tr__fluid__anim {
     background-color: transparent !important;

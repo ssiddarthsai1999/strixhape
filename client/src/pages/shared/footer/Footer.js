@@ -71,7 +71,10 @@ export default function Footer() {
                             Feel free to contact us on
                         </h5>
                         <div className="flex space-x-4">
-                            <a href="#" aria-label="Twitter">
+                            <a
+                                href="https://twitter.com/dt_smat"
+                                aria-label="Twitter"
+                            >
                                 <i className="fa-brands fa-twitter  fa-2xl"></i>
                             </a>
                             <a

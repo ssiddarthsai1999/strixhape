@@ -10,6 +10,7 @@ import {
     Roll,
 } from "react-awesome-reveal";
 import "./about.css";
+import ParticlesComponent from "../../../shared/navbar/ParticlesComponent";
 
 function About({ data }) {
     useLayoutEffect(() => {
@@ -44,7 +45,10 @@ function About({ data }) {
     }, []);
 
     return (
-        <div className="relative mx-auto p-2 lg:min-h-screen xl:h-screen flex items-center justify-center md:px-24" id="about">
+        <div
+            className="relative mx-auto p-2 lg:min-h-screen xl:h-screen flex items-center justify-center md:px-24"
+            id="about"
+        >
             <div className="flex flex-col xl:flex-row p-4">
                 <div className="w-full md:w-1/2 flex flex-col">
                     <h1 className="text-center md:text-left" id="splitabout">
