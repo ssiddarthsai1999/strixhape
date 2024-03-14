@@ -11,7 +11,7 @@ function ClientCard({ item }) {
             <h4 className="mt-2"> {item.name}</h4>
             <div className="flex justify-between items-center align-middle p-3 w-full 2xl:w-1/2 mx-auto ">
                 <div className=" mt-10">
-                    <p className="text-left lg:text-center">"{item.comment}"</p>
+                    <p className="text-left lg:text-center text-white">"{item.comment}"</p>
                 </div>
             </div>
         </div>

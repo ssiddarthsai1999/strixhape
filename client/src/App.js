@@ -28,6 +28,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { toggleTheme } from "./redux/slices/themeSlice";
 import Footer from "./pages/shared/footer/Footer";
 import data from "./data";
+import Scene from "./pages/shared/3d/Scene";
+import Faq from "./pages/shared/faq/Faq";
 
 function App() {
     const [topLoadingProgress, setTopLoadingProgress] = useState(0);
@@ -88,7 +90,6 @@ function App() {
 
     return (
         <div className={`${mode === "dark" ? "dark-mode" : "light-mode"} `}>
-
             <ToastContainer />
             <Router>
                 {" "}
@@ -98,41 +99,50 @@ function App() {
                         element={
                             <div className="scroll-smooth antialiased flex flex-col min-h-screen  ">
                                 {pageName === "normal" && (
-                                    <div className="w-full  absolute md:fixed top-0 z-40 pt-5 ">
-                                        <LoadingBar
-                                            color="#E80D0D"
-                                            progress={topLoadingProgress}
-                                        ></LoadingBar>
-                                        <Navbar
-                                            data={data}
-                                            setNavbarVisible={setNavbarVisible}
-                                            pageName={pageName}
-                                            setPageName={setPageName}
-                                            handleSubscribe={handleSubscribe}
-                                        />
+                                    <div className="w-full  fixed top-0  pt-5 z-40">
+                                        <div className="z-40">
+                                            <LoadingBar
+                                                color="#E80D0D"
+                                                progress={topLoadingProgress}
+                                            ></LoadingBar>
+                                        </div>
+                                        <div className="z-40">
+                                            {" "}
+                                            <Navbar
+                                                data={data}
+                                                setNavbarVisible={
+                                                    setNavbarVisible
+                                                }
+                                                pageName={pageName}
+                                                setPageName={setPageName}
+                                                handleSubscribe={
+                                                    handleSubscribe
+                                                }
+                                            />
+                                        </div>
                                     </div>
                                 )}
-
-                                <Outlet />
-
-                                <div className="flex-grow"></div>
-                                {/* {pageName === "normal" && (
+                                <Outlet /> <div className="flex-grow"></div>
+                                {pageName === "normal" && (
                                     <div className=" bottom-0" id="footer">
+                                        <Faq data={data} />
                                         <Footer />
                                     </div>
-                                )} */}
+                                )}
                             </div>
                         }
                     >
                         {/*Auth......................*/}
                         <Route
                             element={
-                                <Home
-                                    data={data}
-                                    setPageName={setPageName}
-                                    pageName={pageName}
-                                    navbarVisible={navbarVisible}
-                                />
+                                <div className="">
+                                    <Home
+                                        data={data}
+                                        setPageName={setPageName}
+                                        pageName={pageName}
+                                        navbarVisible={navbarVisible}
+                                    />
+                                </div>
                             }
                             path="/"
                         />

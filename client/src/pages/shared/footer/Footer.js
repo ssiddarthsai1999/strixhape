@@ -11,9 +11,9 @@ export default function Footer() {
     };
 
     return (
-        <footer className="  ">
+        <div className=" p-2 z-40">
             <div
-                className="max-w-6xl mx-auto px-4 py-10 md:py-20"
+                className="max-w-6xl mx-auto px-4 py-10 md:py-20 z-40 text-white"
                 id="contactpage"
             >
                 <div className="xl:grid xl:grid-cols-4 md:grid md:grid-cols-2">
@@ -66,22 +66,22 @@ export default function Footer() {
                     </div>
 
                     {/* Social Media */}
-                    <div className="mb-6 md:mb-0">
+                    <div className="mb-6 md:mb-0 z-40">
                         <h5 className="uppercase font-bold my-2.5">
                             Feel free to contact us on
                         </h5>
-                        <div className="flex space-x-4">
+                        <div className="flex space-x-4 z-40">
                             <a
                                 href="https://twitter.com/dt_smat"
                                 aria-label="Twitter"
                             >
-                                <i className="fa-brands fa-twitter  fa-2xl"></i>
+                                <i className="fa-brands fa-twitter z-40  fa-2xl"></i>
                             </a>
                             <a
                                 href="https://twitter.com/dt_smat"
                                 aria-label="Discord"
                             >
-                                <i className="fa-brands fa-discord fa-2xl"></i>
+                                <i className="fa-brands fa-discord fa-2xl z-40"></i>
                             </a>
                         </div>
                     </div>
@@ -91,9 +91,12 @@ export default function Footer() {
             </div>
 
             {/* Copyright */}
-            <div className="text-center p-4 mt-10">
-                © {new Date().getFullYear()} DotStrix. All Rights Reserved.
+            <div className="text-center p-4 mt-10 z-40 text-white">
+                <h5 className="z-40">
+                    {" "}
+                    © {new Date().getFullYear()} DotStrix. All Rights Reserved.
+                </h5>
             </div>
-        </footer>
+        </div>
     );
 }

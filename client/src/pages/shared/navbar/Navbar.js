@@ -106,7 +106,7 @@ function Navbar({ data, pageName, setPageName }) {
                         onClick={() => setPageName("mobileNavbar")}
                         className="cursor-pointer"
                     >
-                        <i className="fa-solid fa-bars-staggered fa-lg cursor-pointer  hover:scale-125  hover:text-[#e80d0d] duration-200 ease-in hover:rotate-12"></i>
+                        <i className="fa-solid fa-bars-staggered fa-lg text-white cursor-pointer  hover:scale-125  hover:text-[#e80d0d] duration-200 ease-in hover:rotate-12"></i>
                     </div>
                 </Tooltip>
             </div>

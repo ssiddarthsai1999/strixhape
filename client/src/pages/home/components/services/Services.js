@@ -80,7 +80,7 @@ function Services({ data }) {
             className="relative mx-auto p-2 min-h-screen md:px-24  flex justify-center flex-col py-[100px] "
             id="services"
         >
-            <div className="p-4 py-10 mx-auto w-full xl:w-1/2 flex flex-col z-10">
+            <div className="p-4 py-10 mx-auto w-full xl:w-1/2 flex flex-col z-20">
                 <h1 className="text-center " id="splitservices">
                     SERVICES
                 </h1>
@@ -92,7 +92,7 @@ function Services({ data }) {
                     </h4>
                 </Zoom>
             </div>
-            <div class="mx-auto  flex justify-center mt-[100px]  z-10">
+            <div class="mx-auto  flex justify-center mt-[100px]  z-20">
                 <div class=" w-[120px] h-[120px] md:h-[200px] md:w-[200px]  lg:h-[300px] lg:w-[300px]  rounded-tl-full relative  border border-[#E80D0D]  flex items-center justify-center">
                     <div className="text-center md:mt-10 md:ml-10 mt-3 ml-3">
                         <h4 className="text-[10px] md:text-[16px] lg:text-[20px]">
@@ -111,7 +111,7 @@ function Services({ data }) {
                     </div>
                 </div>
             </div>
-            <div class="mx-auto  flex justify-center  z-10">
+            <div class="mx-auto  flex justify-center  z-20">
                 <div class="w-[120px] h-[120px] md:h-[200px] md:w-[200px]  lg:h-[300px] lg:w-[300px] rounded-bl-full relative  border border-[#E80D0D]  flex items-center justify-center">
                     <div class="text-center md:mb-10 md:ml-10 mb-3 ml-3">
                         <h4 className="text-[10px] md:text-[16px] lg:text-[20px]">

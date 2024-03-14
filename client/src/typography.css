@@ -33,11 +33,11 @@ body .dark-mode {
     /* Dark/Light mode colors */
     --text-color-light: #1d1d1d; /* Dark text for light background */
     --text-color-dark: #dfd7d7; /* Light text for dark background */
-    --background-color-light: #050505; /* Light background */
+    --background-color-light: #000000; /* Light background */
     --background-color-dark: #000000; /* Dark background */
 
     /* Header colors for dark/light mode */
-    --header-color-light: #bf5331; /* Black for headers in light mode */
+    --header-color-light: #f8dcdc; /* Black for headers in light mode */
     --header-color-dark: #ffecec; /* Light gray for headers in dark mode */
 }
 

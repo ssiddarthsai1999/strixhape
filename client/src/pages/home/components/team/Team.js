@@ -51,14 +51,14 @@ function Team({ data }) {
             className="  lg:min-h-screen lg:h-screen   w-full  justify-center flex-col flex align-middle items-center  mx-auto "
             id="team"
         >
-            <div className="">
+            <div className=" z-40">
                 {" "}
-                <h1 className="text-center lg:mb-2 mb-10 " id="splitteam">
+                <h1 className="text-center lg:mb-2 mb-10  z-40 " id="splitteam">
                     MEET THE TEAM
                 </h1>
             </div>
             <ScrollContainer className="w-full ">
-                <div className="  flex gap-10 md:gap-14 lg:gap-24 py-[50px] md:pt-[100px] z-20 ">
+                <div className="  flex gap-10 md:gap-14 lg:gap-24 py-[50px] md:pt-[100px] z-40 ">
                     {data.team.map((item) => (
                         <TeamCard item={item} />
                     ))}

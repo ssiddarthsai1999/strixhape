@@ -78,13 +78,13 @@ function Hero() {
             id="scene"
             className="relative overflow-hidden text-center flex justify-end items-center lg:h-screen"
         >
-            <div className="z-10 text-white w-full lg:w-1/2">
+            <div className="z-20 text-white w-full lg:w-1/2">
                 <div className="py-10 p-4  ">
-                    <h1 className="mb-10 lg:mb-2 text-center lg:text-left">
+                    <h1 className="mb-10 lg:mb-2 text-center lg:text-left  ">
                         LEAD THE INNOVATION!
                     </h1>
                     <h4
-                        className="mb-10 w-full 2xl:w-1/2 text-left text-white"
+                        className="mb-10 w-full 2xl:w-1/2 text-left text-white "
                         id="innovationpara"
                     >
                         Elevate Your Online Presence with Expert Web Development
@@ -103,14 +103,14 @@ function Hero() {
             </div>
             <div
                 data-depth="0.1"
-                className="absolute inset-0 overflow-hidden"
+                className={`absolute inset-0 overflow-hidden`}
                 ref={sceneRef}
             >
                 <img
                     ref={imgRef}
                     src={hero}
                     alt=""
-                    className="h-screen object-cover w-full"
+                    className={`h-screen object-cover w-full `}
                 />
             </div>{" "}
             <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>{" "}

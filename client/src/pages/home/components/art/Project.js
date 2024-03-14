@@ -70,12 +70,12 @@ function Project({ data }) {
 
     return (
         <div
-            className="lg:min-h-screen w-full pt-[100px] lg:pt-[2px] p-4 lg:p-6 flex-col flex justify-center items-end  relative "
+            className="lg:min-h-screen w-full pt-[100px] lg:pt-[2px] p-4 lg:p-6 flex-col flex justify-center items-end  relative   "
             id="projects"
         >
-            <div className="py-10 w-full lg:w-1/2 flex flex-col z-10 p-4">
+            <div className="py-10 w-full lg:w-1/2 flex flex-col  z-40 p-4">
                 <h1
-                    className="mb-10 md:mb-2 lg:text-left  text-center "
+                    className="mb-10 md:mb-2 lg:text-left  text-center  z-40"
                     id="splitprojects"
                 >
                     PROJECTS
@@ -87,9 +87,9 @@ function Project({ data }) {
                     </h4>
                 </JackInTheBox>
             </div>
-            <div className="z-10 pb-24">
-                <Marquee speed={100} loop={0} className="flex gap-24">
-                    <div className="flex gap-10 md:gap-14 lg:gap-24 py-[50px] md:pt-[100px]">
+            <div className="z-20 pb-24">
+                <Marquee speed={100} loop={0} className="flex gap-24 z-20">
+                    <div className="flex gap-10 md:gap-14 lg:gap-24 py-[50px] md:pt-[100px] z-20">
                         {data.art.map((item) => (
                             <ProjectCard key={item.id} item={item} />
                         ))}

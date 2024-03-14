@@ -50,10 +50,10 @@ function MobileNavbar({
                 <div className="z-20">
                     <h4>DotStrix @{new Date().getFullYear()}</h4>
                 </div>
-                <div className="flex items-center justify-center flex-row align-middle gap-2 z-20">
+                <div className="flex items-center justify-center flex-row align-middle gap-2 z-20 text-white cursor-pointer">
                     <p>Close Menu</p>
                     <i
-                        className="fa-solid fa-xmark fa-xl cursor-pointer hover:scale-125 duration-200 ease-in"
+                        className="fa-solid fa-xmark fa-xl cursor-pointer hover:scale-125  hover:text-[#e80d0d] duration-200 ease-in"
                         onClick={handleNavToHome}
                     ></i>
                 </div>
@@ -83,13 +83,13 @@ function MobileNavbar({
                             href="https://twitter.com/dt_smat"
                             aria-label="Twitter"
                         >
-                            <i className="fa-brands fa-twitter  fa-2xl hover:text-[#e80d0d] duration-200 ease-in hover:-rotate-6"></i>
+                            <i className="fa-brands text-white fa-twitter  fa-2xl hover:text-[#e80d0d] duration-200 ease-in hover:-rotate-6"></i>
                         </a>
                         <a
                             href="https://twitter.com/dt_smat"
                             aria-label="Discord"
                         >
-                            <i className="fa-brands fa-discord fa-2xl hover:text-[#e80d0d] duration-200 ease-in hover:rotate-6"></i>
+                            <i className="fa-brands text-white fa-discord fa-2xl hover:text-[#e80d0d] duration-200 ease-in hover:rotate-6"></i>
                         </a>
                     </div>
                 </div>
@@ -109,7 +109,7 @@ function MobileNavbar({
                     alt=""
                     className="h-screen object-cover w-full blur-2xl z-0"
                 />{" "}
-                <div className="z-10">
+                <div className="z-20">
                     {" "}
                     <ParticlesComponent />
                 </div>

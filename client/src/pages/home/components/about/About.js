@@ -51,13 +51,16 @@ function About({ data }) {
         >
             <div className="flex flex-col xl:flex-row p-4">
                 <div className="w-full md:w-1/2 flex flex-col">
-                    <h1 className="text-center md:text-left" id="splitabout">
+                    <h1
+                        className="text-center md:text-left z-20"
+                        id="splitabout"
+                    >
                         ABOUT US
                     </h1>
                 </div>
-                <div className="w-full lg:w-1/2 flex flex-col justify-end align-bottom mt-[40px]">
+                <div className="w-full lg:w-1/2 flex flex-col justify-end align-bottom mt-[40px]  z-20">
                     <AttentionSeeker>
-                        <h4 className="text-left" id="splitabout2">
+                        <h4 className="text-left z-50" id="splitabout2  ">
                             At DotStrix, we're passionate about harnessing the
                             power of technology to propel businesses forward. As
                             a dynamic team of developers and creatives, we
