@@ -4,7 +4,7 @@ import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
 import * as THREE from "three"; // Import the THREE namespace
 
 const Model = () => {
-    const model = useLoader(FBXLoader, "/walking.fbx");
+    const model = useLoader(FBXLoader, "/WalkingV.fbx");
     const mixer = useRef();
 
     useEffect(() => {
