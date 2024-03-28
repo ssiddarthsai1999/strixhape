@@ -78,9 +78,9 @@ function Home({ data, pageName, setPageName, setNavbarVisible }) {
             {pageName === "normal" && (
                 <div className="overflow-hidden">
                     <div>
-                        <div className="w-full   h-screen fixed top-10 z-10">
+                        {/* <div className="w-full   h-screen fixed top-10 z-10">
                             <Scene />
-                        </div>
+                        </div> */}
                         <div className=" ">
                             <div className="">
                                 <Hero />
@@ -91,7 +91,7 @@ function Home({ data, pageName, setPageName, setNavbarVisible }) {
                             <div className="">
                                 <Services data={data} />
                             </div>
-                            <div className="lg:pt-[100px]">
+                            <div className="lg:pt-[100px] ">
                                 <Project data={data} />
                             </div>
                             <div className="">
@@ -100,7 +100,6 @@ function Home({ data, pageName, setPageName, setNavbarVisible }) {
                             <div className="">
                                 <Client data={data} />
                             </div>{" "}
-                
                         </div>
                     </div>
                 </div>

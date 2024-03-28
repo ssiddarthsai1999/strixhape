@@ -13,12 +13,48 @@ import nymosImage from "./assets/images/client/nymos.jpg";
 import xcaliburImage from "./assets/images/client/xcalibur.jpg";
 const data = {
     art: [
-        { id: 1, name: "Client A", image: astroworldImage },
-        { id: 2, name: "Client B", image: yeatImage },
-        { id: 3, name: "Client C", image: savageImage },
-        { id: 4, name: "Client D", image: travImage },
-        { id: 5, name: "Client E", image: drakeImage },
-        { id: 6, name: "Client F", image: eminemImage },
+        {
+            id: 1,
+            year: "2021",
+            general: "Crypto",
+            name: "Client A",
+            image: astroworldImage,
+        },
+        {
+            id: 2,
+            year: "2021",
+            general: "Crypto",
+            name: "Client B",
+            image: yeatImage,
+        },
+        {
+            id: 3,
+            year: "2021",
+            general: "Crypto",
+            name: "Client C",
+            image: savageImage,
+        },
+        {
+            id: 4,
+            year: "2021",
+            general: "Crypto",
+            name: "Client D",
+            image: travImage,
+        },
+        {
+            id: 5,
+            year: "2021",
+            general: "Crypto",
+            name: "Client E",
+            image: drakeImage,
+        },
+        {
+            id: 6,
+            year: "2021",
+            general: "Crypto",
+            name: "Client F",
+            image: eminemImage,
+        },
     ],
 
     navLinks: [

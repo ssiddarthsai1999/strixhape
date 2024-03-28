@@ -56,10 +56,10 @@ function App() {
             dispatch(toggleTheme(savedMode));
         }
     }, [dispatch]);
-    useEffect(() => {
-        // Save the mode to localStorage whenever it changes
-        localStorage.setItem("themeMode", mode);
-    }, [mode]);
+    // useEffect(() => {
+    //     // Save the mode to localStorage whenever it changes
+    //     localStorage.setItem("themeMode", mode);
+    // }, [mode]);
 
     gsap.registerPlugin(
         ScrollTrigger,
