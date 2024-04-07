@@ -11,49 +11,34 @@ import jujuImage from "./assets/images/team/juju.jpg";
 import frostImage from "./assets/images/team/frost.jpg";
 import nymosImage from "./assets/images/client/nymos.jpg";
 import xcaliburImage from "./assets/images/client/xcalibur.jpg";
+import byxcaliburImage from "./assets/images/project/byxcalibur.png";
+import lexImage from "./assets/images/project/lex.png";
+import mobImage from "./assets/images/project/mob.png";
 const data = {
     art: [
         {
             id: 1,
-            year: "2021",
-            general: "Crypto",
-            name: "Client A",
-            image: astroworldImage,
+            year: "2023",
+            general: "Crypto/Blog",
+            name: "byxcalibur",
+            image: byxcaliburImage,
+            linkToWeb: "https://www.byxcalibur.xyz",
         },
         {
             id: 2,
-            year: "2021",
-            general: "Crypto",
-            name: "Client B",
-            image: yeatImage,
+            year: "2023",
+            general: "Startup",
+            name: "LexDash",
+            image: lexImage,
+            linkToWeb: "https://www.lexdash.app/compliance",
         },
         {
             id: 3,
-            year: "2021",
-            general: "Crypto",
-            name: "Client C",
-            image: savageImage,
-        },
-        {
-            id: 4,
-            year: "2021",
-            general: "Crypto",
-            name: "Client D",
-            image: travImage,
-        },
-        {
-            id: 5,
-            year: "2021",
-            general: "Crypto",
-            name: "Client E",
-            image: drakeImage,
-        },
-        {
-            id: 6,
-            year: "2021",
-            general: "Crypto",
-            name: "Client F",
-            image: eminemImage,
+            year: "2024",
+            general: "Web3",
+            name: "The Mob",
+            image: mobImage,
+            linkToWeb: "https://nymostwo.vercel.app",
         },
     ],
 

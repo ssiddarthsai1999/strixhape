@@ -3,32 +3,32 @@ import team from "../../../../assets/images/homewallpapers/team.jpg";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Parallax from "parallax-js";
-
+import { Link } from "react-router-dom";
 function Project({ data }) {
     const [hoveredId, setHoveredId] = useState(null);
     const parallaxInstances = useRef({});
     const bgRef = useRef(null);
 
-        useEffect(() => {
-            const handleScroll = () => {
-                if (bgRef.current) {
-                    const scrollY = window.scrollY;
-                    const translateY = scrollY * 0.3; // Adjust the speed of the parallax effect
+    useEffect(() => {
+        const handleScroll = () => {
+            if (bgRef.current) {
+                const scrollY = window.scrollY;
+                const translateY = scrollY * 0.3; // Adjust the speed of the parallax effect
 
-                    gsap.to(bgRef.current, {
-                        y: translateY,
-                        duration: 0.5, // Duration of the animation
-                        ease: "power2.out", // Easing function
-                    });
-                }
-            };
+                gsap.to(bgRef.current, {
+                    y: translateY,
+                    duration: 0.5, // Duration of the animation
+                    ease: "power2.out", // Easing function
+                });
+            }
+        };
 
-            window.addEventListener("scroll", handleScroll);
+        window.addEventListener("scroll", handleScroll);
 
-            return () => {
-                window.removeEventListener("scroll", handleScroll);
-            };
-        }, []);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
     const handleHover = (item) => {
         // Check if item is not null before trying to access its id
         if (item) {
@@ -80,7 +80,7 @@ function Project({ data }) {
                 >
                     PROJECTS
                 </h1>
-                <div className="mb-10 w-full xl:w-1/2 text-left lg:text-left ">
+                <div className="mb-10 w-full xl:w-1/2 text-left lg:text-left text-white">
                     Explore our portfolio to see how we can bring your vision to
                     life.
                 </div>
@@ -89,7 +89,10 @@ function Project({ data }) {
             <div className="w-full z-50  min-h-screen">
                 {data.art.map((item) => (
                     <div key={item.id} className="mb-4 group">
-                        <div
+                        <Link
+                            to={item.linkToWeb}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className={`flex z-20 py-4  cursor-pointer align-middle justify-between items-center gap-10 border-b ${
                                 hoveredId === item.id &&
                                 "border-[#e80d0d] duration-300 ease-in-out"
@@ -99,7 +102,7 @@ function Project({ data }) {
                         >
                             <div className="flex gap-5">
                                 <div>
-                                    <p>{item.year}</p>
+                                    <p className="text-white">{item.year}</p>
                                 </div>
 
                                 <div>
@@ -115,7 +118,7 @@ function Project({ data }) {
                                     }`}
                                 ></i>
                             </div>
-                        </div>
+                        </Link>
                         <div
                             id={`parallax-container-${item.id}`}
                             className={`absolute top-0 left-0 -z-10 w-full transition-opacity duration-700 ease-in-out ${
