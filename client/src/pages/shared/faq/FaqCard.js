@@ -8,7 +8,7 @@ function FaqCard({ item }) {
     return (
         <Accordion
             key={item.id}
-            className={`border-b bg-transparent border-[#e80d0d] p-3 shadow-lg z-40 `}
+            className={`border-b bg-transparent border-white p-3 shadow-lg z-40 `}
         >
             <AccordionSummary
                 className=""

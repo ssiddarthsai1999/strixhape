@@ -102,7 +102,7 @@ function App() {
                                     <div className="w-full  fixed top-0  pt-5 z-40">
                                         <div className="z-40">
                                             <LoadingBar
-                                                color="#E80D0D"
+                                                color="white"
                                                 progress={topLoadingProgress}
                                             ></LoadingBar>
                                         </div>

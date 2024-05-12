@@ -38,7 +38,7 @@ const data = {
             general: "Web3",
             name: "The Mob",
             image: mobImage,
-            linkToWeb: "https://nymostwo.vercel.app",
+            linkToWeb: "https://www.themobonbtc.com",
         },
     ],
 

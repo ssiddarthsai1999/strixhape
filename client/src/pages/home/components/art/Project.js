@@ -73,9 +73,9 @@ function Project({ data }) {
             className=" lg:min-h-screen relative  w-full pt-[100px] lg:pt-[2px] p-4 lg:p-6 flex-col flex justify-center items-end "
             id="projects"
         >
-            <div className="py-10 w-full lg:w-1/2 flex flex-col z-40 p-4 ">
+            <div className="py-10 w-full lg:w-1/2 flex flex-col z-10 p-4 ">
                 <h1
-                    className="mb-10 md:mb-2 lg:text-left text-center z-50"
+                    className="mb-10 md:mb-2 lg:text-left text-center z-10"
                     id="splitprojects"
                 >
                     PROJECTS
@@ -86,7 +86,7 @@ function Project({ data }) {
                 </div>
             </div>
 
-            <div className="w-full z-50  min-h-screen">
+            <div className="w-full z-10  min-h-screen">
                 {data.art.map((item) => (
                     <div key={item.id} className="mb-4 group">
                         <Link
