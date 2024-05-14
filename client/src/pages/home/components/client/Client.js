@@ -78,7 +78,7 @@ function Client({ data }) {
                     WHAT OUR CLIENTS SAY ABOUT US
                 </h1>
                 <Roll>
-                    <h4 className="w-full text-left mx-auto justify-center flex mt-10">
+                    <h4 className="w-full text-left mx-auto justify-center flex mt-10 px-4">
                         "Our clients rave about our innovative solutions and
                         exceptional service, citing us as their go-to agency for
                         all things digital. Experience the difference with us

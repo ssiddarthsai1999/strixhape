@@ -85,7 +85,7 @@ function Services({ data }) {
                     SERVICES
                 </h1>
                 <Zoom>
-                    <h4 className=" w-full lg:w-1/2 text-left mt-5   lg:text-left mx-auto justify-center flex">
+                    <h4 className=" w-full lg:w-1/2 text-left mt-5   lg:text-left mx-auto justify-center flex px-4">
                         "Unlock your digital potential with our tailored Discord
                         bot solutions and seamless web development services.
                         Discover how we can elevate your online presence today!"

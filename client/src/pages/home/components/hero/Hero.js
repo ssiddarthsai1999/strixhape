@@ -76,7 +76,7 @@ function Hero() {
     return (
         <div
             id="scene"
-            className="relative overflow-hidden text-center flex justify-end items-center lg:h-screen"
+            className="relative overflow-hidden text-center flex justify-end items-center lg:h-screen lg:py-0 py-[100px]"
         >
             <div className="z-20 text-white w-full lg:w-1/2">
                 <div className="py-10 p-4  ">
@@ -84,7 +84,7 @@ function Hero() {
                         LEAD THE INNOVATION!
                     </h1>
                     <h4
-                        className="mb-10 w-full 2xl:w-1/2 text-left text-white "
+                        className="mb-14 w-full 2xl:w-1/2 text-left px-4 text-white "
                         id="innovationpara"
                     >
                         Elevate Your Online Presence with Expert Web Development

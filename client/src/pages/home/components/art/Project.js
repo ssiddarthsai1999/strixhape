@@ -80,7 +80,7 @@ function Project({ data }) {
                 >
                     PROJECTS
                 </h1>
-                <div className="mb-10 w-full xl:w-1/2 text-left lg:text-left text-white">
+                <div className="mb-10 w-full xl:w-1/2 text-left lg:text-left text-white px-4">
                     Explore our portfolio to see how we can bring your vision to
                     life.
                 </div>
