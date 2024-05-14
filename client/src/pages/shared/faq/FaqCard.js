@@ -20,13 +20,13 @@ function FaqCard({ item }) {
             >
                 <Slide direction="top">
                     {" "}
-                    <h5 className="text-white">{item.question}</h5>
+                    <h5 className="text-white w-[90%] lg:w-full">{item.question}</h5>
                 </Slide>
             </AccordionSummary>
             <AccordionDetails className="">
                 <Slide direction="down">
                     {" "}
-                    <p className="text-white/70">{item.answer}</p>
+                    <p className="text-white/70 ">{item.answer}</p>
                 </Slide>
             </AccordionDetails>
         </Accordion>

@@ -26,7 +26,7 @@ function Services({ data }) {
         const handleScroll = () => {
             if (bgRef.current) {
                 const scrollY = window.scrollY;
-                const translateY = scrollY * 0.1; // Adjust the speed of the parallax effect
+                const translateY = scrollY * -0.1; // Adjust the speed of the parallax effect
 
                 gsap.to(bgRef.current, {
                     y: translateY,
@@ -124,9 +124,9 @@ function Services({ data }) {
                 <div class="w-[120px] h-[120px] md:h-[200px] md:w-[200px]  lg:h-[300px] lg:w-[300px]   rounded-br-full relative border border-white  flex items-center justify-center">
                     <div class="text-center md:mb-10 md:mr-10 mb-3 mr-3">
                         <h4 className="text-[10px] md:text-[16px] lg:text-[20px]">
-                            Ui/Ux design
+                            App Development
                         </h4>
-                        <i className="mt-2 fa-brands fa-figma"></i>
+                        <i class="fa-brands fa-apple mt-2 text-[22px]"></i>
                     </div>
                 </div>
             </div>
@@ -137,7 +137,7 @@ function Services({ data }) {
                 <img
                     src={services}
                     alt=""
-                    ref={bgRef}
+                    // ref={bgRef}
                     className="object-cover w-full h-full"
                 />
             </div>{" "}

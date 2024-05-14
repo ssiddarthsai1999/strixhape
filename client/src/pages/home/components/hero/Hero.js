@@ -93,16 +93,22 @@ function Hero() {
                         Since 2022. Let's Transform Your Vision into Reality
                         Today!"
                     </h4>{" "}
-                    <button
-                        class="cursor-pointer justify-center lg:mx-0 mx-auto lg:justify-start flex font-semibold overflow-hidden relative z-100 border border-white group px-8 py-2"
-                        onClick={() => scrollToElement("contactpage")}
+                    <a
+                        href="mailto:contact@dotstrix.in"
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
-                        <span class="relative z-10 text-white group-hover:text-black text-xl duration-500">
-                            Contact
-                        </span>
-                        <span class="absolute w-full h-full bg-white -left-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:left-0 duration-500"></span>
-                        <span class="absolute w-full h-full bg-white -right-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:right-0 duration-500"></span>
-                    </button>
+                        <button
+                            class="cursor-pointer justify-center lg:mx-0 mx-auto lg:justify-start flex font-semibold overflow-hidden relative z-100 border border-white group px-8 py-2"
+                            onClick={() => scrollToElement("contactpage")}
+                        >
+                            <span class="relative z-10 text-white group-hover:text-black text-xl duration-500">
+                                Contact
+                            </span>
+                            <span class="absolute w-full h-full bg-white -left-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:left-0 duration-500"></span>
+                            <span class="absolute w-full h-full bg-white -right-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:right-0 duration-500"></span>
+                        </button>
+                    </a>
                     {/* <button className="buttonVariation2 cursor-pointer "></button> */}
                 </div>
             </div>

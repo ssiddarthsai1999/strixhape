@@ -94,9 +94,9 @@ function Home({ data, pageName, setPageName, setNavbarVisible }) {
                             <div className="lg:pt-[100px] ">
                                 <Project data={data} />
                             </div>
-                            <div className="">
+                            {/* <div className="">
                                 <Team data={data} />
-                            </div>
+                            </div> */}
                             <div className="">
                                 <Client data={data} />
                             </div>{" "}

@@ -42,7 +42,8 @@ body .dark-mode {
 }
 
 body {
-  font-family: "PT Sans Caption", sans-serif;
+  /* font-family: "PT Sans Caption", sans-serif; */
+     font-family: "Major Mono Display", monospace;
     font-weight: 400;
     font-style: normal;
     overflow-x: hidden;
@@ -66,13 +67,15 @@ h6 {
 
 h1 {
     font-size: 6em;
-  font-family: "PT Sans Caption", sans-serif;
+  /* font-family: "PT Sans Caption", sans-serif; */
+     font-family: "Major Mono Display", monospace;
     font-weight: 400;
     font-style: normal;
 }
 h2 {
     font-size: 4em;
-  font-family: "PT Sans Caption", sans-serif;
+  /* font-family: "PT Sans Caption", sans-serif; */
+     font-family: "Major Mono Display", monospace;
     font-weight: 400;
     font-style: normal;
 }

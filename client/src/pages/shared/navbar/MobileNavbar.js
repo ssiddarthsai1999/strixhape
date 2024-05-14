@@ -74,7 +74,7 @@ function MobileNavbar({
                         </div>
                     ))}
                 </div>
-                <div className="mb-6 md:mb-0 z-20">
+                {/* <div className="mb-6 md:mb-0 z-20">
                     <h5 className="uppercase font-bold my-2.5 mb-10">
                         Feel free to contact us on
                     </h5>
@@ -92,7 +92,7 @@ function MobileNavbar({
                             <i className="fa-brands text-white fa-discord fa-2xl hover:text-[#e80d0d] duration-200 ease-in hover:rotate-6"></i>
                         </a>
                     </div>
-                </div>
+                </div> */}
             </div>
             <hr className="w-[90%]  mt-10 border border-black mx-auto" />
             <div className="mt-10 z-20">

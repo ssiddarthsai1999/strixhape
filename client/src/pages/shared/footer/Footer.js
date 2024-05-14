@@ -66,24 +66,24 @@ export default function Footer() {
                     </div>
 
                     {/* Social Media */}
-                    <div className="mb-6 md:mb-0 z-40">
+                    <div className="mb-6 md:mb-0 z-40 ">
                         <h5 className="uppercase font-bold my-2.5">
-                            Feel free to contact us on
+                            Feel free to contact us
                         </h5>
-                        <div className="flex space-x-4 z-40">
-                            <a
-                                href="https://twitter.com/dt_smat"
-                                aria-label="Twitter"
-                            >
-                                <i className="fa-brands fa-twitter z-40  fa-2xl"></i>
-                            </a>
-                            <a
-                                href="https://twitter.com/dt_smat"
-                                aria-label="Discord"
-                            >
-                                <i className="fa-brands fa-discord fa-2xl z-40"></i>
-                            </a>
-                        </div>
+                        <a
+                            href="mailto:contact@dotstrix.in"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                    
+                        >
+                            <button class="cursor-pointer justify-center lg:mx-0 mx-auto lg:justify-start flex font-semibold overflow-hidden relative z-100 border border-white group px-8 py-2">
+                                <span class="relative z-10 text-white group-hover:text-black text-xl duration-500">
+                                    Contact
+                                </span>
+                                <span class="absolute w-full h-full bg-white -left-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:left-0 duration-500"></span>
+                                <span class="absolute w-full h-full bg-white -right-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:right-0 duration-500"></span>
+                            </button>
+                        </a>
                     </div>
 
                     {/* Newsletter */}
