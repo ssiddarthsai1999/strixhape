@@ -147,67 +147,10 @@ function App() {
                             path="/"
                         />
 
-                        {/* <Route element={<Login />} path="/login" />
-                        <Route element={<Register />} path="/register" />
-                        <Route
-                            path="/verifyEmail/:token"
-                            element={<VerifyEmail />}
-                        /> */}
 
-                        {/* <Route
-                            path="/reset-password/:resetToken"
-                            element={<ResetPassword />}
-                        /> */}
-                        {/*Posts......................*/}
-                        {/* <Route
-                            element={<AllPosts />}
-                            path="/projects/allposts"
-                        /> */}
-
-                        {/*Analysis and tldr......................*/}
-                        {/* <Route element={<Analysis />} path="/deck" />
-                        <Route element={<Tldr />} path="/tldr" /> */}
-                        {/*Profile......................*/}
-                        {/* <Route
-                            element={<AuthUserRoute element={<Profile />} />}
-                            path="/profile"
-                        /> */}
                     </Route>
 
-                    {/*Admin route......................*/}
-                    {/* <Route
-                        element={
-                            <div className="scroll-smooth antialiased flex  ">
-                                {" "}
-                                <div className="  md:sticky left-0 w-fit  ">
-                                    <SideNavbar />
-                                </div>
-                                <div className="adminBg w-full mx-auto">
-                                    {" "}
-                                    <Outlet />
-                                </div>
-                            </div>
-                        }
-                    >
-                        <Route
-                            element={<AdminRoute element={<AllPostss />} />}
-                            path="/admin/posts"
-                        />
-                        <Route
-                            element={<AdminRoute element={<CreatePost />} />}
-                            path="/admin/createpost"
-                        />
-                        <Route
-                            element={<AdminRoute element={<EditPost />} />}
-                            path="/admin/editpost/:id"
-                        />
-                        <Route
-                            element={<AdminRoute element={<Subscribers />} />}
-                            path="/admin/subscribers"
-                        />
-                    </Route> */}
-
-                    {/*Error 404 not found......................*/}
+               
                     <Route path="*" element={<NotFound />} />
                 </Routes>{" "}
             </Router>

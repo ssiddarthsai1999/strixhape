@@ -94,13 +94,13 @@ function Hero() {
                         Today!"
                     </h4>{" "}
                     <a
-                        href="mailto:contact@dotstrix.in"
+                        href="https://lxhj5fucwoi.typeform.com/to/ridNqtvZ"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         <button
                             class="cursor-pointer justify-center lg:mx-0 mx-auto lg:justify-start flex font-semibold overflow-hidden relative z-100 border border-white group px-8 py-2"
-                            onClick={() => scrollToElement("contactpage")}
+          
                         >
                             <span class="relative z-10 text-white group-hover:text-black text-xl duration-500">
                                 Contact
