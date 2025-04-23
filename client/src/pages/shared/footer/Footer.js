@@ -93,7 +93,7 @@ export default function Footer() {
             <div className="text-center p-4 mt-10 z-40 text-white">
                 <h5 className="z-40">
                     {" "}
-                    © {new Date().getFullYear()} DotStrix. All Rights Reserved.
+                    © {new Date().getFullYear()} NeoWave. All Rights Reserved.
                 </h5>
             </div>
         </div>

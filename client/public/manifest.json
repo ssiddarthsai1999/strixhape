@@ -1,19 +1,19 @@
 {
-  "short_name": "Strix",
-  "name": "DotStrix",
+  "short_name": "NW",
+  "name": "NeoWave",
   "icons": [
     {
-      "src": "strixlogo.png",
+      "src": "logoneowave.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "strixlogo.png",
+      "src": "logoneowave.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "strixlogo.png",
+      "src": "logoneowave.png",
       "type": "image/png",
       "sizes": "512x512"
     }

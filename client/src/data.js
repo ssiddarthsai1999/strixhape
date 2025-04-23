@@ -14,6 +14,7 @@ import xcaliburImage from "./assets/images/client/xcalibur.jpg";
 import byxcaliburImage from "./assets/images/project/byxcalibur.png";
 import lexImage from "./assets/images/project/lex.png";
 import mobImage from "./assets/images/project/mob.png";
+import podImage from "./assets/images/project/pod.png";
 const data = {
     art: [
         {
@@ -39,6 +40,14 @@ const data = {
             name: "The Mob",
             image: mobImage,
             linkToWeb: "https://www.themobonbtc.com",
+        },
+        {
+            id: 4,
+            year: "2025",
+            general: "Web3",
+            name: "Part of dreams",
+            image: podImage,
+            linkToWeb: "https://dreamerquests.partofdream.io",
         },
     ],
 
@@ -83,21 +92,21 @@ const data = {
         {
             name: "XCalibur",
             comment:
-                "Working with DotStrix was an absolute pleasure. They transformed our vision into reality with their expertise in web development. Our blog website now stands out with its sleek design and seamless functionality. Highly recommend!",
+                "Working with NeoWave was an absolute pleasure. They transformed our vision into reality with their expertise in web development. Our blog website now stands out with its sleek design and seamless functionality. Highly recommend!",
             image: xcaliburImage,
         },
         {
             name: "Nymos",
             comment:
-                "Partnering with DotStrix for our animated website with Web3 integration was a game-changer. Their creativity and technical prowess brought our vision to life in ways we couldn't have imagined. Truly impressed!",
+                "Partnering with NeoWave for our animated website with Web3 integration was a game-changer. Their creativity and technical prowess brought our vision to life in ways we couldn't have imagined. Truly impressed!",
             image: nymosImage,
         },
     ],
     faqs: [
         {
             id: 1,
-            question: "What services does Strix offer?",
-            answer: "Strix specializes in a comprehensive range of web development services, including UI/UX design, full-stack web development with a focus on the MERN (MongoDB, Express.js, React, Node.js) stack, and custom Discord bot development using Python. We are dedicated to delivering tailored solutions that meet your unique business needs and enhance your digital presence.",
+            question: "What services does NeoWave offer?",
+            answer: "NeoWave specializes in a comprehensive range of web development services, including UI/UX design, full-stack web development with a focus on the MERN (MongoDB, Express.js, React, Node.js) stack, and custom Discord bot development using Python. We are dedicated to delivering tailored solutions that meet your unique business needs and enhance your digital presence.",
         },
 
         {
@@ -113,14 +122,14 @@ const data = {
         {
             id: 4,
             question:
-                "Can Strix help with website hosting and domain registration?",
+                "Can NeoWave help with website hosting and domain registration?",
             answer: "Yes, we offer comprehensive services that include assistance with website hosting and domain registration. We can recommend reliable hosting providers, help set up your hosting account, and assist with domain registration to ensure a smooth and hassle-free launch of your website..",
         },
         {
             id: 5,
             question:
-                "Can Strix integrate third-party services or APIs into our website?",
-            answer: "Absolutely, Strix has extensive experience in integrating a wide range of third-party services and APIs, including payment gateways, CRM systems, social media platforms, and custom APIs. We ensure seamless integration to enhance your website's functionality and user experience.",
+                "Can NeoWave integrate third-party services or APIs into our website?",
+            answer: "Absolutely, NeoWave has extensive experience in integrating a wide range of third-party services and APIs, including payment gateways, CRM systems, social media platforms, and custom APIs. We ensure seamless integration to enhance your website's functionality and user experience.",
         },
         {
             id: 6,

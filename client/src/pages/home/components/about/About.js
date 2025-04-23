@@ -61,7 +61,7 @@ function About({ data }) {
                 <div className="w-full lg:w-1/2 flex flex-col justify-end align-bottom mt-[40px]  z-20">
                     <AttentionSeeker>
                         <h4 className="text-left z-50 px-4" id="splitabout2  ">
-                            At DotStrix, we're passionate about harnessing the
+                            At NeoWave, we're passionate about harnessing the
                             power of technology to propel businesses forward. As
                             a dynamic team of developers and creatives, we
                             specialize in crafting innovative solutions tailored

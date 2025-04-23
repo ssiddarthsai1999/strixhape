@@ -48,7 +48,7 @@ function MobileNavbar({
         >
             <div className="flex md:flex-row justify-between gap-10 p-2 md:p-10 z-20 ">
                 <div className="z-20">
-                    <h4>DotStrix @{new Date().getFullYear()}</h4>
+                    <h4>NEOWAVE @{new Date().getFullYear()}</h4>
                 </div>
                 <div className="flex items-center justify-center flex-row align-middle gap-2 z-20 text-white cursor-pointer">
                     <p>Close Menu</p>
@@ -97,7 +97,7 @@ function MobileNavbar({
             <hr className="w-[90%]  mt-10 border border-black mx-auto" />
             <div className="mt-10 z-20">
                 <Marquee speed={200} loop={0}>
-                    <h1>DOTSTRIX WEB AGENCY</h1>
+                    <h1>NEOWAVE WEB AGENCY</h1>
                 </Marquee>
             </div>
             <div

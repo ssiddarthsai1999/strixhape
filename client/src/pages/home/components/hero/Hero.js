@@ -88,7 +88,7 @@ function Hero() {
                         id="innovationpara"
                     >
                         Elevate Your Online Presence with Expert Web Development
-                        Solutions. Welcome to DotStrix, Where Innovation Meets
+                        Solutions. Welcome to NeoWave, Where Innovation Meets
                         Design Excellence. Crafting Engaging Digital Experiences
                         Since 2022. Let's Transform Your Vision into Reality
                         Today!"

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import gsap from "gsap";
-import logo from "../../../../assets/images/strixlogo.png";
+import logo from "../../../../assets/images/logoneowave.png";
 
 function Opening({ handleNormal }) {
     const [show, setShow] = useState(true); // To control the visibility
@@ -67,7 +67,7 @@ function Opening({ handleNormal }) {
                 style={{ position: "relative", zIndex: 2 }}
             >
                 <h1 className="mb-10" id="text">
-                    DOTSTRIX
+                    NEOWAVE
                 </h1>
                 <img
                     id="logo"
