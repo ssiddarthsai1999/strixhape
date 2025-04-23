@@ -78,7 +78,7 @@ function Navbar({ data, pageName, setPageName }) {
             className={`items-center flex justify-between align-middle w-[90%] max-w-[1800px] mx-auto rounded-[40px] p-4`}
         >
             <div>
-                <img src={logo} className="w-14" alt="" />
+                <img src={logo} className="w-24" alt="" />
             </div>
             <div
                 className="flex gap-10 align-middle items-center"
