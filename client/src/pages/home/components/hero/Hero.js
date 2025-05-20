@@ -5,8 +5,11 @@ import React, {
     useState,
     useMemo,
 } from "react";
+import Marquee from "react-fast-marquee";
+
 import FluidSimulation from "fluid-simulation-react";
 import hero from "../../../../assets/images/homewallpapers/hero.jpg";
+
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
@@ -124,7 +127,12 @@ function Hero() {
                     className={`h-screen object-cover w-full `}
                 />
             </div>{" "}
+
             <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>{" "}
+          
+
+
+
         </div>
     );
 }

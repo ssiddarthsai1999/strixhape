@@ -82,13 +82,12 @@ function Services({ data }) {
         >
             <div className="p-4 py-10 mx-auto w-full xl:w-1/2 flex flex-col z-20">
                 <h1 className="text-center " id="splitservices">
-                    SERVICES
+                   AI WORKFLOW 
+
                 </h1>
                 <Zoom>
                     <h4 className=" w-full lg:w-1/2 text-left mt-5   lg:text-left mx-auto justify-center flex px-4">
-                        "Unlock your digital potential with our tailored Discord
-                        bot solutions and seamless web development services.
-                        Discover how we can elevate your online presence today!"
+                       Our AI Workflow is a proven 4-step process—from discovery to deployment—designed to turn ideas into scalable AI solutions.
                     </h4>
                 </Zoom>
             </div>
@@ -96,7 +95,7 @@ function Services({ data }) {
                 <div class=" w-[120px] h-[120px] md:h-[200px] md:w-[200px]  lg:h-[300px] lg:w-[300px]  rounded-tl-full relative  border border-white  flex items-center justify-center">
                     <div className="text-center md:mt-10 md:ml-10 mt-3 ml-3">
                         <h4 className="text-[10px] md:text-[16px] lg:text-[20px]">
-                            Website development
+                            Discover
                         </h4>
                         <i className="mt-2 fa-solid fa-globe "></i>
                     </div>
@@ -105,7 +104,7 @@ function Services({ data }) {
                 <div class="w-[120px] h-[120px] md:h-[200px] md:w-[200px]  lg:h-[300px] lg:w-[300px] rounded-tr-full relative border border-white flex items-center justify-center">
                     <div class="text-center md:mt-10 md:mr-10 mt-3 mr-3">
                         <h4 className="text-[10px] md:text-[16px] lg:text-[20px]">
-                            Bot development
+                          Design & Prototype
                         </h4>
                         <i className=" mt-2 fa-brands fa-discord"></i>
                     </div>
@@ -115,7 +114,7 @@ function Services({ data }) {
                 <div class="w-[120px] h-[120px] md:h-[200px] md:w-[200px]  lg:h-[300px] lg:w-[300px] rounded-bl-full relative  border border-white  flex items-center justify-center">
                     <div class="text-center md:mb-10 md:ml-10 mb-3 ml-3">
                         <h4 className="text-[10px] md:text-[16px] lg:text-[20px]">
-                            Discord server management
+                      Deploy & Integrate
                         </h4>
                         <i className=" mt-2 fa-solid fa-server"></i>
                     </div>
@@ -124,7 +123,7 @@ function Services({ data }) {
                 <div class="w-[120px] h-[120px] md:h-[200px] md:w-[200px]  lg:h-[300px] lg:w-[300px]   rounded-br-full relative border border-white  flex items-center justify-center">
                     <div class="text-center md:mb-10 md:mr-10 mb-3 mr-3">
                         <h4 className="text-[10px] md:text-[16px] lg:text-[20px]">
-                            App Development
+                      Maintain & Evolve
                         </h4>
                         <i class="fa-brands fa-apple mt-2 text-[22px]"></i>
                     </div>

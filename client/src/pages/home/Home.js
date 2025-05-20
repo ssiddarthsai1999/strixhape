@@ -17,6 +17,7 @@ import FluidSimulation from "fluid-simulation-react";
 import Scene from "../shared/3d/Scene";
 import Model from "../shared/3d/Model";
 import Faq from "../shared/faq/Faq";
+import ServicesTwo from "./components/services/ServicesTwo";
 function Home({ data, pageName, setPageName, setNavbarVisible }) {
     const [isLoading, setIsLoading] = useState(true);
     const [scrollToComponent, setScrollToComponent] = useState("scene");
@@ -90,6 +91,9 @@ function Home({ data, pageName, setPageName, setNavbarVisible }) {
                             </div>
                             <div className="">
                                 <Services data={data} />
+                            </div>
+                                   <div className="">
+                                <ServicesTwo data={data} />
                             </div>
                             <div className="lg:pt-[100px] ">
                                 <Project data={data} />
