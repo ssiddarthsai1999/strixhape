@@ -19,7 +19,13 @@ function Navbar({ data, pageName, setPageName }) {
     const [isScrolled, setIsScrolled] = useState(false);
     const menuRef = useRef();
     const navLinks = data.navLinks;
+  const [isDesktop, setIsDesktop] = useState(false);
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setIsDesktop(window.innerWidth > 768);
+    }
+  }, []);
     // For setting navbar to a different design when scrolled
     useEffect(() => {
         const handleScroll = () => {
@@ -75,41 +81,10 @@ function Navbar({ data, pageName, setPageName }) {
 
     return (
         <div
-            className={`items-center flex justify-between align-middle w-[100%] mx-auto rounded-[40px] p-4`}
+            className={`items-center flex justify-between align-middle  w-[100%] mx-auto rounded-[40px] p-4 `}
         >
-            <div>
-                <img src={logo} className="w-24" alt="" />
-            </div>
-            <div
-                className="flex gap-10 align-middle items-center"
-                ref={audioRef}
-            >
-                {/* Render the music player if isMusicPlayed is true */}
-                {!isMusicPlayed ? (
-                    <Tooltip title="Play music">
-                        <div onClick={playMusic} className="cursor-pointer">
-                            <i
-                                className="fa-solid fa-volume-xmark  cursor-pointer text-white fa-lg hover:scale-125  hover:text-[#e80d0d] duration-200 ease-in hover:-rotate-12"
-                                onClick={playMusic}
-                            ></i>
-                        </div>
-                    </Tooltip>
-                ) : (
-                    <Tooltip title="Stop music">
-                        <div onClick={playMusic} className="cursor-pointer">
-                            <i className="fa-solid fa-volume-off  text-white fa-lg hover:scale-125  hover:text-[#e80d0d] duration-200 ease-in  hover:-rotate-6"></i>
-                        </div>
-                    </Tooltip>
-                )}
-                <Tooltip title="Open menu">
-                    <div
-                        onClick={() => setPageName("mobileNavbar")}
-                        className="cursor-pointer"
-                    >
-                        <i className="fa-solid fa-bars-staggered fa-lg text-white cursor-pointer  hover:scale-125  hover:text-[#e80d0d] duration-200 ease-in hover:rotate-12"></i>
-                    </div>
-                </Tooltip>
-            </div>
+            <div className="flex items-center justify-between  w-full mx-auto">
+            {isDesktop && <img src={logo} className="w-24" alt="Logo" />}
                                  <button
                             class="cursor-pointer justify-center lg:mx-0 mx-auto lg:justify-start flex font-semibold overflow-hidden relative z-100 border border-white group px-8 py-2"
           
@@ -120,6 +95,9 @@ function Navbar({ data, pageName, setPageName }) {
                             <span class="absolute w-full h-full bg-white -left-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:left-0 duration-500"></span>
                             <span class="absolute w-full h-full bg-white -right-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:right-0 duration-500"></span>
                         </button>
+            </div>
+
+            
         </div>
     );
 }

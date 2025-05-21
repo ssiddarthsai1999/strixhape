@@ -83,8 +83,8 @@ function Hero() {
             className="relative overflow-hidden text-center flex justify-center items-center lg:h-screen lg:py-0 py-[100px]"
         >
 <div className="z-50 flex flex-col gap-10 absolute left-3">
-  <FaTwitter className="w-10 h-10 cursor-pointer duration-200 ease-in hover:scale-125" onClick={console.log("hey")} />
-  <FaSquarePhoneFlip className="w-10 h-10 cursor-pointer duration-200 ease-in hover:scale-125" />
+  <FaTwitter className="w-5 h-5 lg:w-10 lg:h-10 cursor-pointer duration-200 ease-in hover:scale-125" onClick={console.log("hey")} />
+  <FaSquarePhoneFlip className="w-5 h-5 lg:w-10 lg:h-10 cursor-pointer duration-200 ease-in hover:scale-125" />
 </div>
 
                 <img src={logo} className=" w-[200px] h-[200px] md:h-[400px] md:w-[400px] lg:h-[700px] lg:w-[700px] 2xl:w-[1000px] 2xl:h-[1000px] xl:w-[800px] xl:h-[800px] z-50" alt="logo"/>
