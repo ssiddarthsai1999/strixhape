@@ -5,11 +5,12 @@ import React, {
     useState,
     useMemo,
 } from "react";
+import { FaTwitter } from "react-icons/fa";
 import Marquee from "react-fast-marquee";
-
+import logo from "../../../../assets/images/neowavelogopng.png"
 import FluidSimulation from "fluid-simulation-react";
 import hero from "../../../../assets/images/homewallpapers/hero.jpg";
-
+import { FaSquarePhoneFlip } from "react-icons/fa6";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
@@ -79,11 +80,16 @@ function Hero() {
     return (
         <div
             id="scene"
-            className="relative overflow-hidden text-center flex justify-end items-center lg:h-screen lg:py-0 py-[100px]"
+            className="relative overflow-hidden text-center flex justify-center items-center lg:h-screen lg:py-0 py-[100px]"
         >
-            <div className="z-20 text-white w-full lg:w-1/2">
+<div className="z-50 flex flex-col gap-10 absolute left-3">
+  <FaTwitter className="w-10 h-10 cursor-pointer duration-200 ease-in hover:scale-125" onClick={console.log("hey")} />
+  <FaSquarePhoneFlip className="w-10 h-10 cursor-pointer duration-200 ease-in hover:scale-125" />
+</div>
 
-            </div>
+                <img src={logo} className=" w-[200px] h-[200px] md:h-[400px] md:w-[400px] lg:h-[700px] lg:w-[700px] 2xl:w-[1000px] 2xl:h-[1000px] xl:w-[800px] xl:h-[800px] z-50" alt="logo"/>
+         
+
             <div
                 data-depth="0.1"
                 className={`absolute inset-0 overflow-hidden`}

@@ -85,7 +85,7 @@ function About({ data }) {
                 <div className="w-full lg:w-1/2 flex flex-col justify-end align-bottom mt-[40px]  z-20">
                     <AttentionSeeker triggerOnce>
                         <h4 className="text-left z-50 px-4" id="splitabout2  ">
-                           NeoWave is a future-forward tech & creative solutions studio built by digital natives for digital pioneers. <br></br>
+                           NeoWave is a future-forward tech & creative solutions studio built by digital natives for digital pioneers.
 
 
 We’re a team of engineers, designers, and strategists with a robust background across fashion, lifestyle and tech industries. NeoWave bridges innovation and impact, blending AI, design, and tech to build what’s next. We’re not here to follow old trends, we are the new wave.

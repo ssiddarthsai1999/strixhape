@@ -111,29 +111,34 @@ const data = {
 
         {
             id: 2,
-            question: "How much does it cost to develop a website?",
+            question: "Do you only work with web3 companies?",
             answer: "The cost of website development varies based on several factors, including the complexity of the design, the number of features required, custom functionalities, and the scope of the project. We provide a detailed quote after understanding your specific needs during the initial consultation.",
         },
         {
             id: 3,
-            question: "How long does it take to build a website?",
+            question: "How can I utilize AI tools for my business?",
             answer: "The timeline for building a website can vary significantly based on the complexity of the project, specific client requirements, and the scale of the website. Generally, a basic website can take anywhere from 1 to 4 weeks, while more complex projects might take several months. We provide a more accurate timeline after the initial consultation and requirement analysis.",
         },
         {
             id: 4,
             question:
-                "Can NeoWave help with website hosting and domain registration?",
+                "How does NeoWave differ from other tech solution agencies?",
             answer: "Yes, we offer comprehensive services that include assistance with website hosting and domain registration. We can recommend reliable hosting providers, help set up your hosting account, and assist with domain registration to ensure a smooth and hassle-free launch of your website..",
         },
         {
             id: 5,
             question:
-                "Can NeoWave integrate third-party services or APIs into our website?",
+                "Do you provide product services?",
             answer: "Absolutely, NeoWave has extensive experience in integrating a wide range of third-party services and APIs, including payment gateways, CRM systems, social media platforms, and custom APIs. We ensure seamless integration to enhance your website's functionality and user experience.",
         },
         {
             id: 6,
-            question: " Will my website be mobile-friendly and SEO-optimized?",
+            question: "What is the client onboarding process at NeoWave?",
+            answer: "Absolutely, we ensure that all websites we develop are responsive and mobile-friendly, providing a seamless user experience across all devices. Additionally, we implement SEO best practices during the development process to ensure your website is optimized for search engines, improving visibility and traffic.",
+        },
+                {
+            id: 7,
+            question: "How can I work with NeoWave?",
             answer: "Absolutely, we ensure that all websites we develop are responsive and mobile-friendly, providing a seamless user experience across all devices. Additionally, we implement SEO best practices during the development process to ensure your website is optimized for search engines, improving visibility and traffic.",
         },
     ],
