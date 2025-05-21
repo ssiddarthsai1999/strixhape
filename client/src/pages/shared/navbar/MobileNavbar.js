@@ -97,7 +97,7 @@ function MobileNavbar({
             <hr className="w-[90%]  mt-10 border border-black mx-auto" />
             <div className="mt-10 z-20">
                 <Marquee speed={200} loop={0}>
-                    <h1>NEOWAVE WEB AGENCY</h1>
+                    <h1>NEOWAVE WEB studio</h1>
                 </Marquee>
             </div>
             <div

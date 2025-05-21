@@ -18,6 +18,7 @@ import Scene from "../shared/3d/Scene";
 import Model from "../shared/3d/Model";
 import Faq from "../shared/faq/Faq";
 import ServicesTwo from "./components/services/ServicesTwo";
+import ClientTwo from "./components/client/ClientTwo";
 function Home({ data, pageName, setPageName, setNavbarVisible }) {
     const [isLoading, setIsLoading] = useState(true);
     const [scrollToComponent, setScrollToComponent] = useState("scene");
@@ -89,11 +90,11 @@ function Home({ data, pageName, setPageName, setNavbarVisible }) {
                             <div className="">
                                 <About data={data} />
                             </div>
-                            <div className="">
-                                <Services data={data} />
-                            </div>
+                 
                                    <div className="">
                                 <ServicesTwo data={data} />
+                            </div>           <div className="">
+                                <Services data={data} />
                             </div>
                             <div className="lg:pt-[100px] ">
                                 <Project data={data} />
@@ -101,6 +102,9 @@ function Home({ data, pageName, setPageName, setNavbarVisible }) {
                             {/* <div className="">
                                 <Team data={data} />
                             </div> */}
+                                    <div className="">
+                                <ClientTwo data={data} />
+                            </div>{" "}
                             <div className="">
                                 <Client data={data} />
                             </div>{" "}

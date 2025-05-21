@@ -68,7 +68,7 @@ export default function Footer() {
                     {/* Social Media */}
                     <div className="mb-6 md:mb-0 z-40 ">
                         <h5 className="uppercase font-bold my-2.5 text-center md:text-left mb-10">
-                            Feel free to contact us
+                        Get in touch with us
                         </h5>
                         <a
                             href="https://lxhj5fucwoi.typeform.com/to/ridNqtvZ"

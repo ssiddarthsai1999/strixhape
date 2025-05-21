@@ -82,38 +82,7 @@ function Hero() {
             className="relative overflow-hidden text-center flex justify-end items-center lg:h-screen lg:py-0 py-[100px]"
         >
             <div className="z-20 text-white w-full lg:w-1/2">
-                <div className="py-10 p-4  ">
-                    <h1 className="mb-10 lg:mb-2 text-center lg:text-left  ">
-                        LEAD THE INNOVATION!
-                    </h1>
-                    <h4
-                        className="mb-14 w-full 2xl:w-1/2 text-left px-4 text-white "
-                        id="innovationpara"
-                    >
-                        Elevate Your Online Presence with Expert Web Development
-                        Solutions. Welcome to NeoWave, Where Innovation Meets
-                        Design Excellence. Crafting Engaging Digital Experiences
-                        Since 2022. Let's Transform Your Vision into Reality
-                        Today!"
-                    </h4>{" "}
-                    <a
-                        href="https://lxhj5fucwoi.typeform.com/to/ridNqtvZ"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <button
-                            class="cursor-pointer justify-center lg:mx-0 mx-auto lg:justify-start flex font-semibold overflow-hidden relative z-100 border border-white group px-8 py-2"
-          
-                        >
-                            <span class="relative z-10 text-white group-hover:text-black text-xl duration-500">
-                                Contact
-                            </span>
-                            <span class="absolute w-full h-full bg-white -left-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:left-0 duration-500"></span>
-                            <span class="absolute w-full h-full bg-white -right-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:right-0 duration-500"></span>
-                        </button>
-                    </a>
-                    {/* <button className="buttonVariation2 cursor-pointer "></button> */}
-                </div>
+
             </div>
             <div
                 data-depth="0.1"

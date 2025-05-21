@@ -18,7 +18,7 @@ function FaqCard({ item }) {
                 aria-controls={`panel${item.id}a-content`}
                 id={`panel${item.id}a-header`}
             >
-                <Slide direction="top">
+                <Slide triggerOnce direction="top">
                     {" "}
                     <h5 className="text-white w-[90%] lg:w-full">{item.question}</h5>
                 </Slide>

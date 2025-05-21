@@ -85,7 +85,7 @@ function Services({ data }) {
                    AI WORKFLOW 
 
                 </h1>
-                <Zoom>
+                <Zoom triggerOnce>
                     <h4 className=" w-full lg:w-1/2 text-left mt-5   lg:text-left mx-auto justify-center flex px-4">
                        Our AI Workflow is a proven 4-step process—from discovery to deployment—designed to turn ideas into scalable AI solutions.
                     </h4>
