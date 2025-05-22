@@ -85,11 +85,7 @@ function Services({ data }) {
                    AI WORKFLOW 
 
                 </h1>
-                <Zoom triggerOnce>
-                    <h4 className=" w-full lg:w-1/2 text-left mt-5   lg:text-left mx-auto justify-center flex px-4">
-                       Our AI Workflow is a proven 4-step process—from discovery to deployment—designed to turn ideas into scalable AI solutions.
-                    </h4>
-                </Zoom>
+    
             </div>
             <div class="mx-auto  flex justify-center mt-[100px]  z-20">
                 <div class=" w-[120px] h-[120px] md:h-[200px] md:w-[200px]  lg:h-[300px] lg:w-[300px]  rounded-tl-full relative  border border-white  flex items-center justify-center">
@@ -129,17 +125,7 @@ function Services({ data }) {
                     </div>
                 </div>
             </div>
-            <div
-                data-depth="0.1"
-                className="absolute inset-0 overflow-hidden z-0"
-            >
-                <img
-                    src={services}
-                    alt=""
-                    // ref={bgRef}
-                    className="object-cover w-full h-full"
-                />
-            </div>{" "}
+ 
             {/* <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
             <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent"></div> */}
         </div>

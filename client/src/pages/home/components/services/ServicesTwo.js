@@ -112,7 +112,7 @@ const aiProductServices = [
           </div>
         ))}
       </div>
-         <h1 className="mt-[100px]">AI PRODUCT SERVICES</h1>
+         <h1 className="mt-[200px] text-center">AI PRODUCT SERVICES</h1>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mt-[100px]">
              
         {aiProductServices.map((service) => (

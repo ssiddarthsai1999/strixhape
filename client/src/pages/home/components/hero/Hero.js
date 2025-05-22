@@ -82,7 +82,7 @@ function Hero() {
             id="scene"
             className="relative overflow-hidden text-center flex justify-center items-center lg:h-screen lg:py-0 py-[100px]"
         >
-<div className="z-50 flex flex-col gap-10 absolute left-3">
+<div className="z-50 flex flex-col gap-10 absolute sm:left-10 left-5">
   <FaTwitter className="w-5 h-5 lg:w-10 lg:h-10 cursor-pointer duration-200 ease-in hover:scale-125" onClick={console.log("hey")} />
   <FaSquarePhoneFlip className="w-5 h-5 lg:w-10 lg:h-10 cursor-pointer duration-200 ease-in hover:scale-125" />
 </div>

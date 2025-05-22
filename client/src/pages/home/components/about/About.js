@@ -53,7 +53,7 @@ function About({ data }) {
 
     return (
         <div
-            className="relative mx-auto  p-2 lg:min-h-screen xl:h-screen flex flex-col items-center justify-center md:px-24"
+            className="relative mx-auto  p-2 lg:min-h-[50vh] flex flex-col items-center justify-center md:px-24"
             id="about"
         >
 

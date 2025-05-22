@@ -81,7 +81,7 @@ function Navbar({ data, pageName, setPageName }) {
 
     return (
         <div
-            className={`items-center flex justify-between align-middle  w-[100%] mx-auto rounded-[40px] p-4 `}
+            className={`items-center flex justify-between align-middle  w-[100%] mx-auto rounded-[40px] px-14 p-4 `}
         >
             <div className="flex items-center justify-between  w-full mx-auto">
             {isDesktop && <img src={logo} className="w-24" alt="Logo" />}
