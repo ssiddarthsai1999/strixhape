@@ -20,60 +20,60 @@ import {
 function Services({ data }) {
     const bgRef = useRef(null);
 
-    useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
+    // useEffect(() => {
+    //     gsap.registerPlugin(ScrollTrigger);
 
-        const handleScroll = () => {
-            if (bgRef.current) {
-                const scrollY = window.scrollY;
-                const translateY = scrollY * -0.1; // Adjust the speed of the parallax effect
+    //     const handleScroll = () => {
+    //         if (bgRef.current) {
+    //             const scrollY = window.scrollY;
+    //             const translateY = scrollY * -0.1; // Adjust the speed of the parallax effect
 
-                gsap.to(bgRef.current, {
-                    y: translateY,
-                    duration: 0.5, // Duration of the animation
-                    ease: "power2.out", // Easing function
-                });
-            }
-        };
+    //             gsap.to(bgRef.current, {
+    //                 y: translateY,
+    //                 duration: 0.5, // Duration of the animation
+    //                 ease: "power2.out", // Easing function
+    //             });
+    //         }
+    //     };
 
-        window.addEventListener("scroll", handleScroll);
+    //     window.addEventListener("scroll", handleScroll);
 
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
+    //     return () => {
+    //         window.removeEventListener("scroll", handleScroll);
+    //     };
+    // }, []);
 
-    useLayoutEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
+    // useLayoutEffect(() => {
+    //     gsap.registerPlugin(ScrollTrigger);
 
-        const splitservices = new SplitText("#splitservices", {
-            type: "chars",
-        });
-        gsap.from(splitservices.chars, {
-            opacity: 0,
+    //     const splitservices = new SplitText("#splitservices", {
+    //         type: "chars",
+    //     });
+    //     gsap.from(splitservices.chars, {
+    //         opacity: 0,
 
-            rotationX: -70,
-            x: -500,
-            y: -100,
-            rotationY: 20,
-            scale: -10,
-            ease: "power1.inOut",
-            stagger: {
-                each: 0.13,
-                from: "start",
-            },
-            scrollTrigger: {
-                trigger: "#splitservices",
-                start: "top bottom", // Trigger animation when top of the element reaches the center of the viewport
-                end: "bottom center", // End animation when bottom of the element reaches the center of the viewport
-                scrub: 3, // Smooth scrubbing effect on scroll
-                toggleActions: "play none none none", // Toggle actions when element enters and leaves the viewport
-            },
-        });
-        return () => {
-            splitservices.revert();
-        };
-    }, []);
+    //         rotationX: -70,
+    //         x: -500,
+    //         y: -100,
+    //         rotationY: 20,
+    //         scale: -10,
+    //         ease: "power1.inOut",
+    //         stagger: {
+    //             each: 0.13,
+    //             from: "start",
+    //         },
+    //         scrollTrigger: {
+    //             trigger: "#splitservices",
+    //             start: "top bottom", // Trigger animation when top of the element reaches the center of the viewport
+    //             end: "bottom center", // End animation when bottom of the element reaches the center of the viewport
+    //             scrub: 3, // Smooth scrubbing effect on scroll
+    //             toggleActions: "play none none none", // Toggle actions when element enters and leaves the viewport
+    //         },
+    //     });
+    //     return () => {
+    //         splitservices.revert();
+    //     };
+    // }, []);
 
     return (
         <div

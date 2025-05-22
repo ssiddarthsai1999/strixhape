@@ -16,7 +16,7 @@ import {
 } from "react-awesome-reveal";
 function ClientTwo() {
   return (
-                        <Fade triggerOnce duration={3000} className="mb-10 lg:mb-[200px]">
+                        <Fade triggerOnce duration={3000} className="mb-10 lg:mb-[100px] ">
     <Marquee
     speed={80}
     direction="right"

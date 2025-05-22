@@ -20,40 +20,40 @@ import "./about.css";
 import ParticlesComponent from "../../../shared/navbar/ParticlesComponent";
 
 function About({ data }) {
-    useLayoutEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
+    // useLayoutEffect(() => {
+    //     gsap.registerPlugin(ScrollTrigger);
 
-        const splitabout = new SplitText("#splitabout", {
-            type: "chars",
-        });
-        gsap.from(splitabout.chars, {
-            opacity: 0,
+    //     const splitabout = new SplitText("#splitabout", {
+    //         type: "chars",
+    //     });
+    //     gsap.from(splitabout.chars, {
+    //         opacity: 0,
 
-            rotationX: -180,
-            x: 500,
-            rotationY: 180,
-            ease: "power1.inOut",
-            stagger: {
-                each: 0.13,
-                from: "start",
-            },
-            scrollTrigger: {
-                trigger: "#splitabout",
-                start: "top bottom", // Trigger animation when top of the element reaches the center of the viewport
-                end: "bottom center", // End animation when bottom of the element reaches the center of the viewport
-                scrub: 3, // Smooth scrubbing effect on scroll
-                toggleActions: "play none none none", // Toggle actions when element enters and leaves the viewport
-            },
-        });
-        return () => {
-            splitabout.revert();
-            ScrollTrigger.refresh();
-        };
-    }, []);
+    //         rotationX: -180,
+    //         x: 500,
+    //         rotationY: 180,
+    //         ease: "power1.inOut",
+    //         stagger: {
+    //             each: 0.13,
+    //             from: "start",
+    //         },
+    //         scrollTrigger: {
+    //             trigger: "#splitabout",
+    //             start: "top bottom", // Trigger animation when top of the element reaches the center of the viewport
+    //             end: "bottom center", // End animation when bottom of the element reaches the center of the viewport
+    //             scrub: 3, // Smooth scrubbing effect on scroll
+    //             toggleActions: "play none none none", // Toggle actions when element enters and leaves the viewport
+    //         },
+    //     });
+    //     return () => {
+    //         splitabout.revert();
+    //         ScrollTrigger.refresh();
+    //     };
+    // }, []);
 
     return (
         <div
-            className="relative mx-auto  p-2 lg:min-h-[50vh] flex flex-col items-center justify-center md:px-24"
+            className="relative mx-auto  p-2  flex flex-col items-center justify-center md:px-24"
             id="about"
         >
 

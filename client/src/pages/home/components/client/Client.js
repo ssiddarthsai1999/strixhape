@@ -16,61 +16,61 @@ import {
 function Client({ data }) {
     const bgRef = useRef(null);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            if (bgRef.current) {
-                const scrollY = window.scrollY;
-                const translateY = scrollY * 0.3; // Adjust the speed of the parallax effect
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         if (bgRef.current) {
+    //             const scrollY = window.scrollY;
+    //             const translateY = scrollY * 0.3; // Adjust the speed of the parallax effect
 
-                gsap.to(bgRef.current, {
-                    y: translateY,
-                    duration: 0.5, // Duration of the animation
-                    ease: "power2.out", // Easing function
-                });
-            }
-        };
+    //             gsap.to(bgRef.current, {
+    //                 y: translateY,
+    //                 duration: 0.5, // Duration of the animation
+    //                 ease: "power2.out", // Easing function
+    //             });
+    //         }
+    //     };
 
-        window.addEventListener("scroll", handleScroll);
+    //     window.addEventListener("scroll", handleScroll);
 
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
+    //     return () => {
+    //         window.removeEventListener("scroll", handleScroll);
+    //     };
+    // }, []);
 
-    useLayoutEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
+    // useLayoutEffect(() => {
+    //     gsap.registerPlugin(ScrollTrigger);
 
-        const splitclient = new SplitText("#splitclient", {
-            type: "words",
-        });
+    //     const splitclient = new SplitText("#splitclient", {
+    //         type: "words",
+    //     });
 
-        gsap.from(splitclient.words, {
-            opacity: 0,
-            color: "#e80d0d",
+    //     gsap.from(splitclient.words, {
+    //         opacity: 0,
+    //         color: "#e80d0d",
 
-            scale: 10,
-            ease: "power1.out",
-            stagger: {
-                each: 0.23,
-                from: "end",
-            },
-            scrollTrigger: {
-                trigger: "#splitclient",
-                start: "top bottom", // Trigger animation when top of the element reaches the center of the viewport
-                end: "bottom center", // End animation when bottom of the element reaches the center of the viewport
-                scrub: 3, // Smooth scrubbing effect on scroll
-                toggleActions: "play none none none", // Toggle actions when element enters and leaves the viewport
-            },
-        });
+    //         scale: 10,
+    //         ease: "power1.out",
+    //         stagger: {
+    //             each: 0.23,
+    //             from: "end",
+    //         },
+    //         scrollTrigger: {
+    //             trigger: "#splitclient",
+    //             start: "top bottom", // Trigger animation when top of the element reaches the center of the viewport
+    //             end: "bottom center", // End animation when bottom of the element reaches the center of the viewport
+    //             scrub: 3, // Smooth scrubbing effect on scroll
+    //             toggleActions: "play none none none", // Toggle actions when element enters and leaves the viewport
+    //         },
+    //     });
 
-        return () => {
-            splitclient.revert();
-        };
-    }, []);
+    //     return () => {
+    //         splitclient.revert();
+    //     };
+    // }, []);
 
     return (
         <div
-            className="relative mx-auto p-2 min-h-screen md:px-24 flex justify-center flex-col py-[100px]"
+            className="relative mx-auto p-2 min-h-screen md:px-24 flex justify-center flex-col pb-[100px]"
             id="clientspage"
         >
             <div className="py-10 mx-auto w-full lg:w-1/2 flex flex-col z-20 p-4">
