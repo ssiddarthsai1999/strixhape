@@ -78,7 +78,7 @@ function Client({ data }) {
                     WHAT OUR CLIENTS SAY ABOUT US
                 </h1>
                 <Roll triggerOnce>
-                    <h4 className="w-full text-left mx-auto justify-center flex mt-10 px-4">
+                    <h4 className="w-full text-left mx-auto justify-center font-light flex mt-10 px-4">
                         "Our clients rave about our innovative solutions and
                         exceptional service, citing us as their go-to studio for
                         all things digital. Experience the difference with us
@@ -105,17 +105,7 @@ function Client({ data }) {
                     </div>
                 ))}
             </Carousel>
-            <div
-                data-depth="0.1"
-                className="absolute inset-0 overflow-hidden z-0"
-            >
-                <img
-                    src={clients}
-                    ref={bgRef}
-                    alt=""
-                    className="absolute inset-0 overflow-hidden z-0"
-                />
-            </div>{" "}
+
             {/* <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent"></div> */}
         </div>
     );

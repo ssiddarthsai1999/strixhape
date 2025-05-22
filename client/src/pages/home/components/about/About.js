@@ -68,7 +68,7 @@ function About({ data }) {
                 </div>
                 <div className="w-full lg:w-1/2 flex flex-col justify-end align-bottom mt-[40px]  z-20">
                     <AttentionSeeker triggerOnce>
-                        <h4 className="text-left z-50 px-4" id="splitabout2  ">
+                        <h4 className="text-left z-50 px-4 font-light" id="splitabout2  ">
                            NeoWave is a future-forward tech & creative solutions studio built by digital natives for digital pioneers.
 
 
