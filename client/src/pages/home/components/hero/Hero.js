@@ -90,18 +90,7 @@ function Hero() {
                 <img src={logo} className=" w-[200px] h-[200px] md:h-[400px] md:w-[400px] lg:h-[700px] lg:w-[700px] 2xl:w-[1000px] 2xl:h-[1000px] xl:w-[800px] xl:h-[800px] z-50" alt="logo"/>
          
 
-            <div
-                data-depth="0.1"
-                className={`absolute inset-0 overflow-hidden`}
-                ref={sceneRef}
-            >
-                <img
-                    ref={imgRef}
-                    src={hero}
-                    alt=""
-                    className={`h-screen object-cover w-full `}
-                />
-            </div>{" "}
+
 
             <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>{" "}
           

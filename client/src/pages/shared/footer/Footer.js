@@ -1,7 +1,9 @@
 import axios from "axios";
-
+import logo from "../.././../assets/images/neowavelogopng.png"
 import { useState } from "react";
-
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaDiscord } from "react-icons/fa";
 export default function Footer() {
     const [email, setEmail] = useState();
     const [data, setData] = useState("");
@@ -17,10 +19,36 @@ export default function Footer() {
     id="contactpage"
   >
     {/* Flex container for red and blue sections */}
-    <div className="flex flex-col md:flex-row justify-between gap-10">
+    <div className="flex flex-col-reverse md:flex-row justify-between gap-10">
       {/* Quick Links */}
-      <div className=" p-4 w-full md:w-1/2">
-        <h5 className="uppercase font-bold mb-2.5">Quick Links</h5>
+
+
+      {/* Social Media / Contact */}
+      <div className=" w-full md:w-1/2 justify-start flex flex-col items-center  md:items-start ">
+            <div className="">          <img src={logo} className="w-[200px] h-[200px]"/></div>
+    
+ 
+
+<div className="flex justify-center items-center gap-4 md:ml-8 mt-[-30px]">
+  <a href="#" target="_blank" rel="noopener noreferrer">
+    <FaTwitter className="text-[30px] cursor-pointer duration-200 ease-in hover:scale-125" />
+  </a>
+  <a href="#" target="_blank" rel="noopener noreferrer">
+    <FaDiscord className="text-[30px] cursor-pointer duration-200 ease-in hover:scale-125" />
+  </a>
+  <a href="#" target="_blank" rel="noopener noreferrer">
+    <FaLinkedin className="text-[30px] cursor-pointer duration-200 ease-in hover:scale-125" />
+  </a>
+</div>
+  <div className="text-center p-4 mt-[20px] font-light text-[12px] z-40 text-white">
+    <p className="z-40">© {new Date().getFullYear()} NeoWave. All Rights Reserved.</p>
+  </div>
+
+
+
+
+      </div>      <div className=" p-4 w-full justify-center md:justify-end items-center md:items-end flex flex-col md:w-1/2">
+    
         <ul className="space-y-2">
           <li><a href="#" className="hover:underline">Home</a></li>
           <li><a href="#" className="hover:underline">About</a></li>
@@ -30,33 +58,11 @@ export default function Footer() {
           <li><a href="#" className="hover:underline">Clients</a></li>
         </ul>
       </div>
-
-      {/* Social Media / Contact */}
-      <div className=" p-4 w-full md:w-1/2 justify-start flex flex-col  items-end">
-        <h5 className="uppercase font-bold text-center md:text-left mb-10">
-          Get in touch with us
-        </h5>
-        <a
-          href="https://lxhj5fucwoi.typeform.com/to/ridNqtvZ"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button className="cursor-pointer justify-center lg:mx-0 mx-auto lg:justify-start flex font-semibold overflow-hidden relative border border-white group px-8 py-2">
-            <span className="relative z-10 text-white group-hover:text-black text-xl duration-500">
-              Contact
-            </span>
-            <span className="absolute w-full h-full bg-white -left-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:left-0 duration-500"></span>
-            <span className="absolute w-full h-full bg-white -right-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:right-0 duration-500"></span>
-          </button>
-        </a>
-      </div>
     </div>
   </div>
 
   {/* Copyright */}
-  <div className="text-center p-4 mt-10 z-40 text-white">
-    <h5 className="z-40">© {new Date().getFullYear()} NeoWave. All Rights Reserved.</h5>
-  </div>
+
 </div>
 
     );

@@ -21,7 +21,7 @@ const data = {
             id: 1,
             year: "2023",
             general: "Crypto/Blog",
-            name: "byxcalibur",
+            name: "ByXcalibur ",
             image: byxcaliburImage,
             linkToWeb: "https://www.byxcalibur.xyz",
         },

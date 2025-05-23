@@ -49,7 +49,7 @@ function Project({ data }) {
                                 onMouseLeave={() => handleHover(null)}
                             >
                                 <div className="flex gap-5">
-                                    <p className="text-white">{item.year}</p>
+                               
                                     <div>
                                         <h4 className="ml-2">{item.name}</h4>
                                         <h6 className="ml-2">{item.general}</h6>
