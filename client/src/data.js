@@ -1,10 +1,5 @@
 // Import images here. Replace these lines with actual imports from your project.
-import astroworldImage from "./assets/images/art/astroworld.jpg";
-import yeatImage from "./assets/images/art/yeat.jpg";
-import savageImage from "./assets/images/art/21.jpg";
-import travImage from "./assets/images/art/trav.jfif";
-import drakeImage from "./assets/images/art/drake.jpg";
-import eminemImage from "./assets/images/art/eminem.jpg";
+
 import smatImage from "./assets/images/team/smat.jpg";
 import flexImage from "./assets/images/team/flex.jpg";
 import jujuImage from "./assets/images/team/juju.jpg";
@@ -12,6 +7,7 @@ import frostImage from "./assets/images/team/frost.jpg";
 import nymosImage from "./assets/images/client/nymos.jpg";
 import xcaliburImage from "./assets/images/client/xcalibur.jpg";
 import byxcaliburImage from "./assets/images/project/byxcalibur.png";
+import netherakImage from "./assets/images/project/netherak.png";
 import lexImage from "./assets/images/project/lex.png";
 import mobImage from "./assets/images/project/mob.png";
 import podImage from "./assets/images/project/pod.png";
@@ -20,7 +16,7 @@ const data = {
         {
             id: 1,
             year: "2023",
-            general: "Crypto/Blog",
+            general: "Crypto Media Outlet",
             name: "ByXcalibur ",
             image: byxcaliburImage,
             linkToWeb: "https://www.byxcalibur.xyz",
@@ -28,15 +24,15 @@ const data = {
         {
             id: 2,
             year: "2023",
-            general: "Startup",
-            name: "LexDash",
-            image: lexImage,
-            linkToWeb: "https://www.lexdash.app/compliance",
+            general: "Game",
+            name: "Netherak Demons",
+            image: netherakImage,
+            linkToWeb: "https://netherakdemons.com/",
         },
         {
             id: 3,
             year: "2024",
-            general: "Web3",
+            general: "SocialFi Platform",
             name: "The Mob",
             image: mobImage,
             linkToWeb: "https://www.themobonbtc.com",
@@ -44,7 +40,7 @@ const data = {
         {
             id: 4,
             year: "2025",
-            general: "Web3",
+            general: "SocialFi Platform",
             name: "Part of dreams",
             image: podImage,
             linkToWeb: "https://dreamerquests.partofdream.io",
@@ -92,13 +88,13 @@ const data = {
         {
             name: "XCalibur",
             comment:
-                "Working with NeoWave was an absolute pleasure. They transformed our vision into reality with their expertise in web development. Our blog website now stands out with its sleek design and seamless functionality. Highly recommend!",
+               "Working with NeoWave Studio was an absolute pleasure. They transformed our vision into reality with their expertise in web development. Our blog website now stands out with its sleek design and seamless functionality. I highly recommend them!",
             image: xcaliburImage,
         },
         {
             name: "Nymos",
             comment:
-                "Partnering with NeoWave for our animated website with Web3 integration was a game-changer. Their creativity and technical prowess brought our vision to life in ways we couldn't have imagined. Truly impressed!",
+                "Partnering with NeoWave Studio for our animated website with Web3 integration was a game-changer. Their creativity and technical prowess brought our vision to life in ways we couldn't have imagined. Truly impressed!",
             image: nymosImage,
         },
     ],
@@ -106,40 +102,36 @@ const data = {
         {
             id: 1,
             question: "What services does NeoWave offer?",
-            answer: "NeoWave specializes in a comprehensive range of web development services, including UI/UX design, full-stack web development with a focus on the MERN (MongoDB, Express.js, React, Node.js) stack, and custom Discord bot development using Python. We are dedicated to delivering tailored solutions that meet your unique business needs and enhance your digital presence.",
+            answer: "NeoWave offers end-to-end web and app development, including UI/UX design, full-stack builds, and custom Python-based Discord bots. We also enhance business performance with tailored AI tools and automation solutions.",
         },
 
         {
             id: 2,
             question: "Do you only work with web3 companies?",
-            answer: "The cost of website development varies based on several factors, including the complexity of the design, the number of features required, custom functionalities, and the scope of the project. We provide a detailed quote after understanding your specific needs during the initial consultation.",
+            answer: "Our tech team has experience in both web2 & web3 development, offering a wide range of services tailored to all types of businesses within any market.",
         },
         {
             id: 3,
             question: "How can I utilize AI tools for my business?",
-            answer: "The timeline for building a website can vary significantly based on the complexity of the project, specific client requirements, and the scale of the website. Generally, a basic website can take anywhere from 1 to 4 weeks, while more complex projects might take several months. We provide a more accurate timeline after the initial consultation and requirement analysis.",
+            answer: "We build intelligent AI systems tailored to your business, from workshop to deployment.",
         },
         {
             id: 4,
             question:
                 "How does NeoWave differ from other tech solution agencies?",
-            answer: "Yes, we offer comprehensive services that include assistance with website hosting and domain registration. We can recommend reliable hosting providers, help set up your hosting account, and assist with domain registration to ensure a smooth and hassle-free launch of your website..",
+            answer: "NeoWave works with businesses of all types and sizes, focusing on enhancing tech performance before offering solutions.",
         },
         {
             id: 5,
             question:
                 "Do you provide product services?",
-            answer: "Absolutely, NeoWave has extensive experience in integrating a wide range of third-party services and APIs, including payment gateways, CRM systems, social media platforms, and custom APIs. We ensure seamless integration to enhance your website's functionality and user experience.",
+            answer: "Our team brings broad experience in product design and development, offering tech and product consulting alongside full 360° services.",
         },
-        {
-            id: 6,
-            question: "What is the client onboarding process at NeoWave?",
-            answer: "Absolutely, we ensure that all websites we develop are responsive and mobile-friendly, providing a seamless user experience across all devices. Additionally, we implement SEO best practices during the development process to ensure your website is optimized for search engines, improving visibility and traffic.",
-        },
+
                 {
-            id: 7,
+            id: 6,
             question: "How can I work with NeoWave?",
-            answer: "Absolutely, we ensure that all websites we develop are responsive and mobile-friendly, providing a seamless user experience across all devices. Additionally, we implement SEO best practices during the development process to ensure your website is optimized for search engines, improving visibility and traffic.",
+            answer: "You can get in touch via our website or booking an introductory call directly with our team. We will first make sure to gather all of your technological concerns before coming back with a ready-to-execute proposal.",
         },
     ],
 };

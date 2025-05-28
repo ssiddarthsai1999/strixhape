@@ -52,7 +52,7 @@ function Project({ data }) {
                                
                                     <div>
                                         <h4 className="ml-2">{item.name}</h4>
-                                        <h6 className="ml-2">{item.general}</h6>
+                                        <h6 className="ml-2 font-[300]">{item.general}</h6>
                                     </div>
                                 </div>
                                 <div className="mr-10">

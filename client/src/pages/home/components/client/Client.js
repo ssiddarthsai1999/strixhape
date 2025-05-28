@@ -79,10 +79,9 @@ function Client({ data }) {
                 </h1>
                 <Roll triggerOnce>
                     <h4 className="w-full text-left mx-auto justify-center font-light flex mt-10 px-4">
-                        "Our clients rave about our innovative solutions and
-                        exceptional service, citing us as their go-to studio for
-                        all things digital. Experience the difference with us
-                        today!"
+                
+"Our clients rave about our innovative solutions and exceptional service, citing us as their go-to studio for all things digital. Experience the difference with us today!"
+
                     </h4>
                 </Roll>
             </div>

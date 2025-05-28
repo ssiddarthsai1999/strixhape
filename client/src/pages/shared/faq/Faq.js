@@ -6,7 +6,7 @@ import FaqCard from "./FaqCard";
 const Faq = ({ data }) => {
 
     return (
-        <div className="z-20  p-8">
+        <div className="z-20  p-8" id="faq">
             <h1   className="mb-24 z-40">
                 FREQUENTLY ASKED QUESTIONS
             </h1>

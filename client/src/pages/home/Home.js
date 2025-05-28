@@ -93,9 +93,10 @@ function Home({ data, pageName, setPageName, setNavbarVisible }) {
                  
                                    <div className="">
                                 <ServicesTwo data={data} />
-                            </div>           <div className="">
+                            </div>          
+                             {/* <div className="">
                                 <Services data={data} />
-                            </div>
+                            </div> */}
                             <div className=" ">
                                 <Project data={data} />
                             </div>

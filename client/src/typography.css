@@ -167,7 +167,7 @@ cursor: inherit;
     color: rgb(255, 255, 255);
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1600px) {
     /* For tablets */
     h1 {
         font-size: 4.5em;

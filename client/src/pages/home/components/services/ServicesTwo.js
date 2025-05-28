@@ -48,7 +48,7 @@ const serviceData= [ {
 {
     id:6,
     title:"Tech Consulting",
-    description:"Supporting businesses make smarter technologic decisions by providing guidance for the right tools and strategies to help execute your vision."
+    description:"NeoWave supports businesses to make smarter technological decisions by providing guidance for the right tools and strategies to help execute your vision."
 },
 
 ]
@@ -65,7 +65,8 @@ const aiProductServices = [
   {
     category: "Design & Development",
     services: [
-      "Custom AI Product UI/UX",
+      "Custom AI Product",
+      " UI/UX",
       "Interactive Dashboards & Visuals",
       "Gamified Digital Experiences",
       "Website & App Design"
@@ -84,7 +85,7 @@ const aiProductServices = [
 
 
     return (
-        <div
+        <div id="services"
             className="relative mx-auto p-2 min-h-screen md:px-24  flex justify-center flex-col py-[100px] "
         
         >

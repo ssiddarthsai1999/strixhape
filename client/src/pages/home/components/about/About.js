@@ -53,11 +53,11 @@ function About({ data }) {
 
     return (
         <div
-            className="relative mx-auto  p-2  flex flex-col items-center justify-center md:px-24"
+            className="relative mx-auto  p-2  flex flex-col items-center justify-center xl:px-24"
             id="about"
         >
 
-            <div className="flex flex-col xl:flex-row p-4">
+            <div className="flex flex-col xl:flex-row  items-center p-4">
                 <div className="w-full md:w-1/2 flex flex-col">
                     <h1
                         className="text-center md:text-left z-20"
@@ -66,13 +66,10 @@ function About({ data }) {
                         WHO WE ARE
                     </h1>
                 </div>
-                <div className="w-full lg:w-1/2 flex flex-col justify-end align-bottom mt-[40px]  z-20">
+                <div className="w-full lg:w-1/2 flex flex-col justify-end align-bottom  z-20">
                     <AttentionSeeker triggerOnce>
                         <h4 className="text-left z-50 px-4 font-light" id="splitabout2  ">
-                           NeoWave is a future-forward tech & creative solutions studio built by digital natives for digital pioneers.
-
-
-We’re a team of engineers, designers, and strategists with a robust background across fashion, lifestyle and tech industries. NeoWave bridges innovation and impact, blending AI, design, and tech to build what’s next. We’re not here to follow old trends, we are the new wave.
+                          NeoWave Studio is a future-forward tech & creative solutions studio built by digital natives for digital pioneers. We bridge innovation and impact, blending AI, design, and tech to build what’s next. We don’t follow old trends, we’re the new wave.
                         </h4>
                     </AttentionSeeker>
                 </div>

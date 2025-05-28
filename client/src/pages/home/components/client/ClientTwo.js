@@ -16,7 +16,7 @@ import {
 } from "react-awesome-reveal";
 function ClientTwo() {
   return (
-                        <Fade triggerOnce duration={3000} className="mb-10 lg:mb-[100px] ">
+                        <div className="mb-10 lg:mb-[100px] " id="actualclients">
     <Marquee
     speed={80}
     direction="right"
@@ -32,7 +32,7 @@ function ClientTwo() {
       <img src={venmo} alt="Vertex" className="mx-10 h-10 md:h-14 lg:h-24 ml-24 object-contain " />
        <img src={jump} alt="Vertex" className="mx-10 h-10 md:h-14 lg:h-24 ml-24 object-contain " />
 </Marquee>
-</Fade >
+</div >
   )
 }
 

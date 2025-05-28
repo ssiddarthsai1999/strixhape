@@ -9,6 +9,7 @@ import { FaTwitter } from "react-icons/fa";
 import Marquee from "react-fast-marquee";
 import logo from "../../../../assets/images/neowavelogopng.png"
 import FluidSimulation from "fluid-simulation-react";
+import { FaCalendar } from "react-icons/fa";
 import hero from "../../../../assets/images/homewallpapers/hero.jpg";
 import { FaSquarePhoneFlip } from "react-icons/fa6";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -83,8 +84,10 @@ function Hero() {
             className="relative overflow-hidden text-center flex justify-center items-center lg:h-screen lg:py-0 py-[100px]"
         >
 <div className="z-50 flex flex-col gap-10 absolute sm:left-10 left-5">
-  <FaTwitter className="w-5 h-5 lg:w-10 lg:h-10 cursor-pointer duration-200 ease-in hover:scale-125" onClick={console.log("hey")} />
-  <FaSquarePhoneFlip className="w-5 h-5 lg:w-10 lg:h-10 cursor-pointer duration-200 ease-in hover:scale-125" />
+ <a href="https://x.com/neowavestudio" target="_blank" rel="noopener noreferrer"> <FaTwitter className="w-5 h-5 lg:w-10 lg:h-10 cursor-pointer duration-200 ease-in hover:scale-125"  /></a>
+   <a href="https://calendly.com/smat-neowave/30min" target="_blank" rel="noopener noreferrer">
+     <FaCalendar className="w-5 h-5 lg:w-10 lg:h-10 cursor-pointer duration-200 ease-in hover:scale-125" />
+   </a>
 </div>
 
                 <img src={logo} className=" w-[200px] h-[200px] md:h-[400px] md:w-[400px] lg:h-[700px] lg:w-[700px] 2xl:w-[1000px] 2xl:h-[1000px] xl:w-[800px] xl:h-[800px] z-50" alt="logo"/>
