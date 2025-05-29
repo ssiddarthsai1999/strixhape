@@ -26,7 +26,8 @@ export default function Footer() {
 
       {/* Social Media / Contact */}
       <div className=" w-full md:w-1/2  justify-start flex flex-col items-center   md:items-center ">
-            <div className="">          <img src={logo} className="w-[100px] h-[100px]"/></div>
+            <div className="">       <img src={logo} className="w-[100px] mb-5 h-auto object-contain" alt="logo" />
+</div>
     
  
 

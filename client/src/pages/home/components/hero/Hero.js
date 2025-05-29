@@ -90,7 +90,12 @@ function Hero() {
    </a>
 </div>
 
-                <img src={logo} className=" w-[200px] h-[200px] md:h-[400px] md:w-[400px] lg:h-[700px] lg:w-[700px] 2xl:w-[1000px] 2xl:h-[1000px] xl:w-[800px] xl:h-[800px] z-50" alt="logo"/>
+              <img
+  src={logo}
+  className="w-[200px] md:w-[400px] lg:w-[700px] xl:w-[800px] 2xl:w-[1000px] h-auto object-contain z-50"
+  alt="logo"
+/>
+
          
 
 
