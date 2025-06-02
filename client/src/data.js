@@ -41,7 +41,7 @@ const data = {
             id: 4,
             year: "2025",
             general: "SocialFi Platform",
-            name: "Part of dreams",
+            name: "Part Of Dreams",
             image: podImage,
             linkToWeb: "https://dreamerquests.partofdream.io",
         },

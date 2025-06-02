@@ -70,10 +70,10 @@ function Client({ data }) {
 
     return (
         <div
-            className="relative mx-auto p-2 min-h-screen md:px-24 flex justify-center flex-col pb-[100px]"
+            className="relative mx-auto p-2 min-h-screen md:px-24  flex justify-center flex-col pb-[100px]"
             id="clientspage"
         >
-            <div className="py-10 mx-auto w-full lg:w-1/2 flex flex-col z-20 p-4">
+            <div className="py-10 mx-auto w-full lg:w-[80%] xl:w-[60%]  2xl:w-[50%] flex flex-col z-20 p-4 ">
                 <h1 className="text-center" id="splitclient">
                     WHAT OUR CLIENTS SAY ABOUT US
                 </h1>
@@ -93,7 +93,7 @@ function Client({ data }) {
                 showArrows={true}
                 autoPlay={true}
                 infiniteLoop={true}
-                className="mt-4 lg:mt-10 z-20 w-full xl:w-1/2 mx-auto"
+                className="mt-4 lg:mt-10 z-20 w-full  lg:w-full 2xl:w-[60%] mx-auto "
             >
                 {data.clients.map((item) => (
                     <div

@@ -57,28 +57,19 @@ const aiProductServices = [
   {
     category: "Business & Strategy",
     services: [
-      "AI Strategy Consulting",
-      "End-to-End Workflow Automation",
-      "Data Privacy & Compliance"
+"AI Strategy Consulting, End-to-End Workflow Automation, Data Privacy & Compliance"
     ]
   },
   {
     category: "Design & Development",
     services: [
-      "Custom AI Product",
-      " UI/UX",
-      "Interactive Dashboards & Visuals",
-      "Gamified Digital Experiences",
-      "Website & App Design"
+"Custom AI Products, UI/UX, Interactive Dashboards & Visuals, Gamified Digital Experiences, Website & App Design"
     ]
   },
   {
     category: "Engineering & Integration",
     services: [
-      "AI Model Development (ML/NLP/CV)",
-      "Bot Development (Discord & Telegram)",
-      "Smart Contract Engineering",
-      "API & Platform Integration"
+"AI Model Development (ML/NLP/CV), Bot Development (Discord & Telegram), Smart Contract Engineering API & Platform Integration"
     ]
   }
 ];

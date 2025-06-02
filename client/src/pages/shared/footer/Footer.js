@@ -20,13 +20,13 @@ export default function Footer() {
     id="contactpage"
   >
     {/* Flex container for red and blue sections */}
-    <div className="flex flex-col-reverse md:flex-row justify-between gap-10">
+    <div className="flex flex-col-reverse md:flex-row justify-between gap-10 ">
       {/* Quick Links */}
 
 
       {/* Social Media / Contact */}
       <div className=" w-full md:w-1/2  justify-start flex flex-col items-center   md:items-center ">
-            <div className="">       <img src={logo} className="w-[100px] mb-5 h-auto object-contain" alt="logo" />
+            <div className="">       <img src={logo} className="w-[200px] md:w-[300px] mb-5 h-auto object-contain" alt="logo" />
 </div>
     
  
@@ -49,7 +49,7 @@ export default function Footer() {
 
       </div>      
       
-      <div className=" p-4 w-full justify-center md:justify-start items-center md:items-center flex flex-col md:w-1/2">
+      <div className="  w-full justify-center md:justify-start items-center md:items-center flex flex-col md:w-1/2">
     
         <ul className="space-y-2">
       <li className="font-black mb-3"> Navigation</li>
@@ -62,7 +62,7 @@ export default function Footer() {
 </a></li>
         </ul>
       </div>
-        <div className=" p-4 w-full justify-center md:justify-start items-center md:items-center flex flex-col md:w-1/2">
+        <div className="  w-full justify-center md:justify-start items-center md:items-center flex flex-col md:w-1/2">
     
         <ul className="space-y-2">
       <li className="font-black mb-3"> Information</li>
