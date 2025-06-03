@@ -41,7 +41,7 @@ export default function Footer() {
   </a>
 </div>
   <div className="text-center p-4 mt-[20px] font-light text-[12px] z-40 text-white">
-    <p className="z-40">© {new Date().getFullYear()} NeoWave. All Rights Reserved.</p>
+    <p className="z-40">© {new Date().getFullYear()} NeoWave Studio. All Rights Reserved.</p>
   </div>
 
 
