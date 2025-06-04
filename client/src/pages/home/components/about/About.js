@@ -60,7 +60,7 @@ function About({ data }) {
             <div className="flex flex-col xl:flex-col  items-center p-4">
                 <div className="w-full md:w-1/2 flex flex-col">
                     <h1
-                        className="text-center md:text-center mb-10 z-20"
+                        className="text-center md:text-center mb-24 z-20"
                         id="splitabout"
                     >
                         WHO WE ARE

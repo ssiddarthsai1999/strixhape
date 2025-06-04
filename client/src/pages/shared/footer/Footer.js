@@ -20,12 +20,12 @@ export default function Footer() {
     id="contactpage"
   >
     {/* Flex container for red and blue sections */}
-    <div className="flex flex-col-reverse md:flex-row justify-between md:px-10 gap-10 ">
+    <div className="flex flex-col-reverse  md:flex-row justify-between md:px-10 gap-10  ">
       {/* Quick Links */}
 
 
       {/* Social Media / Contact */}
-      <div className=" w-full md:w-1/2  justify-start flex flex-col items-center   md:items-start ">
+      <div className=" w-full md:w-1/2  justify-start flex flex-col items-start   md:items-start ">
             <div className="">       <img src={logo} className="w-[200px] md:w-[300px] mb-5 h-auto object-contain" alt="logo" />
 </div>
     
@@ -40,7 +40,7 @@ export default function Footer() {
     <FaCalendar className="text-[30px] cursor-pointer duration-200 ease-in hover:scale-125" />
   </a>
 </div>
-  <div className="text-center p-4 mt-[20px] font-light text-[12px] z-40 text-white">
+  <div className="text-left mt-[34px] font-light text-[12px] z-40 text-white">
     <p className="z-40">© {new Date().getFullYear()} NeoWave Studio. All Rights Reserved.</p>
   </div>
 
@@ -49,7 +49,7 @@ export default function Footer() {
 
       </div>      
       
-      <div className="  w-full justify-center md:justify-start items-center md:items-center flex flex-col md:w-1/2">
+      <div className="  w-full justify-center md:justify-start  items-start md:items-center flex flex-col md:w-1/2">
     
         <ul className="space-y-2">
       <li className="font-black mb-3"> Navigation</li>
@@ -62,7 +62,7 @@ export default function Footer() {
 </a></li>
         </ul>
       </div>
-        <div className="  w-full justify-center md:justify-start items-center md:items-end flex flex-col md:w-1/2">
+        <div className="  w-full justify-center md:justify-start items-start md:items-end flex flex-col md:w-1/2">
     
         <ul className="space-y-2">
       <li className="font-black mb-3"> Information</li>
