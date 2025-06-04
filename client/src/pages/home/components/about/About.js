@@ -60,7 +60,7 @@ function About({ data }) {
             <div className="flex flex-col xl:flex-col  items-center p-4">
                 <div className="w-full md:w-1/2 flex flex-col">
                     <h1
-                        className="text-center md:text-center mb-24 z-20"
+                        className="text-center md:text-center mb-14 z-20"
                         id="splitabout"
                     >
                         WHO WE ARE
@@ -68,7 +68,7 @@ function About({ data }) {
                 </div>
                 <div className="w-full lg:w-1/2 flex flex-col justify-end align-bottom  z-20">
                     <AttentionSeeker triggerOnce>
-                        <h4 className="text-left z-50 px-4 font-light" id="splitabout2  ">
+                        <h4 className="text-center z-50 px-4 font-light" id="splitabout2  ">
                           NeoWave Studio is a future-forward tech & creative solutions studio built by digital natives for digital pioneers. We bridge innovation and impact, blending AI, design, and tech to build what’s next. We don’t follow old trends, we’re the new wave.
                         </h4>
                     </AttentionSeeker>
